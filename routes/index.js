@@ -1,7 +1,7 @@
 const express = require("express");
 const prisma = require("../prisma/prisma");
 const router = express.Router();
-
+const { roomFilterList } = require("../utils/staticData");
 /* GET home page. */
 router.get("/", async function (req, res, next) {
   const {
@@ -41,7 +41,7 @@ router.get("/", async function (req, res, next) {
     param.where.room = room;
   }
   const rentList = await prisma.rents.findMany(param);
-  res.render("index", { rentList });
+  res.render("index", { rentList, roomFilterList });
 });
 
 module.exports = router;

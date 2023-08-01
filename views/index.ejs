@@ -9,15 +9,17 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.11.1/qs.min.js"></script>
     <script src="/javascripts/global.js" type="text/javascript"></script>
+    <script src="/javascripts/tool.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="container" id="app">
     <div class="select-panel row p-2 position-relative border-bottom">
-        <div class="col osition-relative cursor-pointer">
+        <div class="col position-relative cursor-pointer">
             <span class="d-flex align-items-center" @click="toggleNavShow(0)">位置<em class="triangeld"
                                                                                       :class="{active: showNavConfig[0]}"></em></span>
         </div>
-        <div class="click-show-part row position-absolute w-100 top-100" :class="{'d-none': !showNavConfig[0]}">
+        <div class="click-show-part bg-light row position-absolute w-100 top-100"
+             :class="{'d-none': !showNavConfig[0]}">
             <ul class="list-group col-5 pe-0">
                 <li @click="curProvince = item.value"
                     class="list-group-item border-0 cursor-pointer"
@@ -40,7 +42,8 @@
             <span class="d-flex align-items-center" @click="toggleNavShow(1)">租金<em class="triangeld"
                                                                                       :class="{active: showNavConfig[1]}"></em></span>
         </div>
-        <div class=" click-show-part position-absolute start-0 top-100" :class="{'d-none': !showNavConfig[1]}">
+        <div class="click-show-part bg-light position-absolute start-0 top-100"
+             :class="{'d-none': !showNavConfig[1]}">
             <ul class="list-group col">
                 <li @click="selectCurPrice(item)"
                     class="list-group-item border-0 cursor-pointer"
@@ -54,7 +57,8 @@
             <span class="d-flex align-items-center" @click="toggleNavShow(2)">类型<em class="triangeld"
                                                                                       :class="{active: showNavConfig[2]}"></em></span>
         </div>
-        <div class=" click-show-part position-absolute start-0 top-100" :class="{'d-none': !showNavConfig[2]}">
+        <div class="click-show-part bg-light position-absolute start-0 top-100"
+             :class="{'d-none': !showNavConfig[2]}">
             <ul class="list-group col">
                 <li @click="selectCurRentType(item)"
                     class="list-group-item  border-0 cursor-pointer"
@@ -68,7 +72,8 @@
             <span class="d-flex align-items-center" @click="toggleNavShow(3)">户型<em class="triangeld"
                                                                                       :class="{active: showNavConfig[3]}"></em></span>
         </div>
-        <div class=" click-show-part position-absolute start-0 top-100" :class="{'d-none': !showNavConfig[3]}">
+        <div class="click-show-part bg-light position-absolute start-0 top-100"
+             :class="{'d-none': !showNavConfig[3]}">
             <ul class="list-group col">
                 <li @click="selectCurHouseType(item)"
                     class="list-group-item border-0 cursor-pointer"
@@ -82,7 +87,8 @@
             <span class="d-flex align-items-center" @click="toggleNavShow(4)">筛选<em class="triangeld"
                                                                                       :class="{active: showNavConfig[4]}"></em></span>
         </div>
-        <div class=" click-show-part position-absolute start-0 top-100 p-3" :class="{'d-none': !showNavConfig[4]}">
+        <div class="click-show-part bg-light position-absolute start-0 top-100 p-3"
+             :class="{'d-none': !showNavConfig[4]}">
             <div class="mb-2" v-for="obj in globalData.filterTypes" :key="obj.label">
                 <div class="h6">{{obj.label}}</div>
                 <div class="row g-2">
@@ -114,7 +120,8 @@
                         <div class="fs-7 text-secondary">
                             <span><%= item.room; %>室/</span>
                             <span><%= item.square; %>平米/</span>
-                            <span><%= item.decoration_type; %></span>
+                            <% var decorationItem = roomFilterList.find(o => o.value === +item.decoration_type) || {}; %>
+                            <span><%= decorationItem.label; %></span>
                         </div>
                         <div class="text-danger"><%= item.price; %><%= item.price_text; %>
                         </div>
@@ -182,16 +189,32 @@
             query(type) {
                 const q = Qs.parse(location.search.slice(1))
                 if (type === "city") {
-                    q.city = this.curCity
+                    if (!this.curCity) {
+                        delete q.city
+                    } else {
+                        q.city = this.curCity
+                    }
                 }
                 if (type === "price") {
-                    q.price = this.rentMoneyValue
+                    if (!this.rentMoneyValue) {
+                        delete q.price
+                    } else {
+                        q.price = this.rentMoneyValue
+                    }
                 }
                 if (type === 'vice_class') {
-                    q.vice_class = this.rentTypeValue
+                    if (!this.rentTypeValue) {
+                        delete q.vice_class
+                    } else {
+                        q.vice_class = this.rentTypeValue
+                    }
                 }
                 if (type === 'room') {
-                    q.room = this.houseTypeValue
+                    if (!this.room) {
+                        delete q.room
+                    } else {
+                        q.room = this.room
+                    }
                 }
                 window.location.href = window.location.origin + window.location.pathname + "?" + Qs.stringify(q)
             }
