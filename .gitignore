@@ -1,0 +1,7 @@
+node_modules
+# .env文件发布的时候不要传
+# .env
+.idea
+.vscode
+.well-known
+

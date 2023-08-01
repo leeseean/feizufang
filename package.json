@@ -1,0 +1,33 @@
+{
+  "name": "feizufang",
+  "version": "0.0.0",
+  "private": false,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "crawlee": "^3.4.2",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.3",
+    "http-errors": "~1.6.3",
+    "md5": "^2.3.0",
+    "morgan": "~1.9.1",
+    "node-cron": "^3.0.2",
+    "playwright": "^1.36.2",
+    "puppeteer": "^20.9.0",
+    "qs": "^6.11.2",
+    "superagent": "^8.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
+    "prisma": "^5.0.0"
+  },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
+  }
+}
