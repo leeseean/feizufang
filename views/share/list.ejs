@@ -1,0 +1,45 @@
+<div class="list-panel">
+    <% var topList = rentList.filter(v => v.topdateline && new Date(v.topdateline).getTime() > new Date().getTime()) %>
+    <% var noTopList = rentList.filter(v => !v.topdateline || new Date(v.topdateline).getTime() < new Date().getTime()) %>
+    <% for (const item of topList.concat(noTopList)) { %>
+        <div class="row rent-item-row cursor-pointer align-items-stretch border-bottom p-2">
+            <div class="col-4 position-relative p-0">
+                <img src="<%= item.param.cover; %>" alt="<%= item.title; %>"
+                     class="w-100 h-100"/>
+                <% if (item.topdateline && new Date(item.topdateline).getTime() > new Date().getTime()) { %>
+                    <img src="/images/top.png" alt="菲律宾租房" class="img-fluid position-absolute top-0 start-0"
+                         style="width: 20px; height: 23px"/>
+                <% } %>
+                <% var publishTypeObj = publishTypeList.find(o => o.value === item.publish_type) || {} %>
+                <% var publishTypeText = publishTypeObj.label %>
+                <span class="position-absolute bottom-0 start-0 fs-7 pe-1 ps-1 <%= publishTypeText === '中介' ? 'text-light bg-danger' : 'text-light bg-dark' %>"><%= publishTypeText %></span>
+            </div>
+            <div class="col-8 pe-0">
+                <div class="ellipsis-text"><%= item.title; %></div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="fs-7 text-secondary">
+                        <span><%= item.room; %>室/</span>
+                        <span><%= item.square; %>平米/</span>
+                        <% var decorationItem = dressFilterList.find(o => String(o.value) === String(item.decoration_type)) || {}; %>
+                        <span><%= decorationItem.label; %></span>
+                    </div>
+                    <% if (item.price) { %>
+                        <div class="text-danger"><%= item.price; %><%= item.price_text; %>
+                        </div>
+                    <% } else { %>
+                        <div class="text-danger">面议
+                        </div>
+                    <% } %>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-success text-nowrap ellipsis-text w-75 fs-7">
+                        <% for (const tag of item.param.tag_list) { %>
+                            <span class="me-1"><%= tag %></span>
+                        <% } %>
+                    </div>
+                    <span class="text-secondary"><%= item.dateline.toLocaleDateString(); %></span>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</div>

@@ -163,11 +163,11 @@ var globalData = {
       model: "timeFilter",
       list: [
         {
-          value: 0,
+          value: "2",
           label: "更新时间",
         },
         {
-          value: 1,
+          value: "1",
           label: "发布时间",
         },
       ],
@@ -178,31 +178,31 @@ var globalData = {
       type: "radio",
       list: [
         {
-          value: 0,
+          value: "",
           label: "不限",
         },
         {
-          value: 1,
+          value: "1",
           label: "普通住宅",
         },
         {
-          value: 2,
+          value: "2",
           label: "公寓式",
         },
         {
-          value: 3,
+          value: "3",
           label: "复式",
         },
         {
-          value: 4,
+          value: "4",
           label: "跃层式",
         },
         {
-          value: 5,
+          value: "5",
           label: "小户型",
         },
         {
-          value: 6,
+          value: "6",
           label: "花园式",
         },
       ],
@@ -213,23 +213,23 @@ var globalData = {
       model: "dressFilter",
       list: [
         {
-          value: 0,
+          value: "",
           label: "不限",
         },
         {
-          value: 1,
+          value: "1",
           label: "毛坯",
         },
         {
-          value: 2,
+          value: "2",
           label: "普通装修",
         },
         {
-          value: 3,
+          value: "3",
           label: "精装修",
         },
         {
-          value: 4,
+          value: "4",
           label: "豪华装修",
         },
       ],
@@ -240,43 +240,43 @@ var globalData = {
       model: "facingFilter",
       list: [
         {
-          value: 0,
+          value: "",
           label: "不限",
         },
         {
-          value: 1,
+          value: "3",
           label: "朝南",
         },
         {
-          value: 2,
+          value: "4",
           label: "朝北",
         },
         {
-          value: 3,
+          value: "1",
           label: "朝东",
         },
         {
-          value: 4,
+          value: "2",
           label: "朝西",
         },
         {
-          value: 5,
+          value: "5",
           label: "东南",
         },
         {
-          value: 6,
+          value: "6",
           label: "西南",
         },
         {
-          value: 7,
+          value: "9",
           label: "南北",
         },
         {
-          value: 8,
+          value: "8",
           label: "西北",
         },
         {
-          value: 9,
+          value: "7",
           label: "东北",
         },
       ],
@@ -287,51 +287,51 @@ var globalData = {
       model: "furnishFilter",
       list: [
         {
-          value: 0,
+          value: "1",
           label: "电视机",
         },
         {
-          value: 1,
+          value: "2",
           label: "床",
         },
         {
-          value: 2,
+          value: "3",
           label: "洗衣机",
         },
         {
-          value: 3,
+          value: "4",
           label: "空调",
         },
         {
-          value: 4,
+          value: "5",
           label: "冰箱",
         },
         {
-          value: 5,
+          value: "6",
           label: "热水器",
         },
         {
-          value: 6,
+          value: "7",
           label: "电视",
         },
         {
-          value: 7,
+          value: "8",
           label: "宽带",
         },
         {
-          value: 8,
+          value: "9",
           label: "阳台",
         },
         {
-          value: 9,
+          value: "10",
           label: "独卫",
         },
         {
-          value: 10,
+          value: "11",
           label: "沙发",
         },
         {
-          value: 11,
+          value: "12",
           label: "桌椅",
         },
       ],
@@ -342,35 +342,35 @@ var globalData = {
       model: "tagFilter",
       list: [
         {
-          value: 0,
+          value: "1",
           label: "绿化率高",
         },
         {
-          value: 1,
+          value: "2",
           label: "交通便捷",
         },
         {
-          value: 2,
+          value: "3",
           label: "物业好",
         },
         {
-          value: 3,
+          value: "4",
           label: "拎包入住",
         },
         {
-          value: 4,
+          value: "5",
           label: "学区房",
         },
         {
-          value: 5,
+          value: "6",
           label: "配套齐全",
         },
         {
-          value: 6,
+          value: "7",
           label: "繁华市区",
         },
         {
-          value: 7,
+          value: "8",
           label: "酒店式",
         },
       ],

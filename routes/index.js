@@ -1,7 +1,8 @@
 const express = require("express");
+const { PrismaClient } = require("@prisma/client");
 const prisma = require("../prisma/prisma");
 const router = express.Router();
-const { roomFilterList } = require("../utils/staticData");
+const { dressFilterList, publishTypeList } = require("../utils/staticData");
 /* GET home page. */
 router.get("/", async function (req, res, next) {
   const {
@@ -11,15 +12,32 @@ router.get("/", async function (req, res, next) {
     price,
     vice_class,
     room,
+    timeFilter,
+    roomFilter,
+    dressFilter,
+    facingFilter,
+    furnishFilter,
+    tagFilter,
   } = req.query;
   const skip = (pageNumber - 1) * pageSize;
   const take = pageSize;
+  let orderBy = {
+    updateline: "desc",
+  };
+  if (timeFilter === "1") {
+    orderBy = {
+      dateline: "desc",
+    };
+  }
+  if (timeFilter === "2") {
+    orderBy = {
+      updateline: "desc",
+    };
+  }
   const param = {
     skip,
     take,
-    orderBy: {
-      updateline: "desc", // 按日期降序排序，最近的日期排在前面
-    },
+    orderBy,
     where: {},
   };
   if (city) {
@@ -40,8 +58,32 @@ router.get("/", async function (req, res, next) {
   if (room) {
     param.where.room = room;
   }
-  const rentList = await prisma.rents.findMany(param);
-  res.render("index", { rentList, roomFilterList });
+  if (roomFilter) {
+    param.where.house_type = roomFilter;
+  }
+  if (dressFilter) {
+    param.where.decoration_type = dressFilter;
+  }
+  if (facingFilter) {
+    param.where.orientation = facingFilter;
+  }
+  let rentList = await prisma.rents.findMany(param);
+  const ids = rentList.map((item) => item.id).join(",");
+  if (furnishFilter && tagFilter) {
+    const raw = String.raw`SELECT * FROM feizufang.rents WHERE id IN (${ids}) AND FIND_IN_SET(${furnishFilter}, configure) AND FIND_IN_SET(${tagFilter}, tag);`;
+    rentList = await prisma.$queryRawUnsafe(raw);
+  } else {
+    if (furnishFilter) {
+      const raw = `SELECT * FROM feizufang.rents WHERE id IN (${ids}) AND FIND_IN_SET(${furnishFilter}, configure);`;
+      rentList = await prisma.$queryRawUnsafe(raw);
+    }
+    if (tagFilter) {
+      const raw = `SELECT * FROM feizufang.rents WHERE id IN (${ids}) AND FIND_IN_SET(${tagFilter}, tag);`;
+      rentList = await prisma.$queryRawUnsafe(raw);
+    }
+  }
+  console.log(tagFilter);
+  res.render("index", { rentList, dressFilterList, publishTypeList });
 });
 
 module.exports = router;

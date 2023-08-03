@@ -43,10 +43,10 @@ model rents {
   office            String?   @db.VarChar(45)
   guard             String?   @db.VarChar(45)
   deposit           String?   @db.VarChar(45)
-  house_type        Int?
-  decoration_type   Int?
+  house_type        String?   @db.VarChar(5)
+  decoration_type   String?   @db.VarChar(5)
   years             String?   @db.VarChar(45)
-  orientation       Int?
+  orientation       String?   @db.VarChar(5)
   property_right    String?   @db.VarChar(45)
   management_type   String?   @db.VarChar(45)
   shops_type        String?   @db.VarChar(45)

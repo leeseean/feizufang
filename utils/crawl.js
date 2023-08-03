@@ -26,125 +26,125 @@ const superagentPromise = (url) => {
 };
 const houseTypeConfig = [
   {
-    value: 0,
+    value: "",
     label: "不限",
   },
   {
-    value: 1,
+    value: "1",
     label: "普通住宅（民房）",
   },
   {
-    value: 2,
+    value: "2",
     label: "公寓式住宅",
   },
   {
-    value: 3,
+    value: "3",
     label: "复式住宅",
   },
   {
-    value: 4,
+    value: "4",
     label: "跃层式住宅",
   },
   {
-    value: 5,
+    value: "5",
     label: "小户型住宅",
   },
   {
-    value: 6,
+    value: "6",
     label: "花园洋房式住宅(别墅)",
   },
 ];
 const decorationTypeConfig = [
   {
-    value: 0,
+    value: "",
     label: "不限",
   },
   {
-    value: 1,
+    value: "1",
     label: "毛坯",
   },
   {
-    value: 2,
+    value: "2",
     label: "普通装修",
   },
   {
-    value: 3,
+    value: "3",
     label: "精装修",
   },
   {
-    value: 4,
+    value: "4",
     label: "豪华装修",
   },
 ];
 const orientationConfig = [
   {
-    value: 0,
+    value: "",
     label: "不限",
   },
   {
-    value: 1,
+    value: "3",
     label: "朝南",
   },
   {
-    value: 2,
+    value: "4",
     label: "朝北",
   },
   {
-    value: 3,
+    value: "1",
     label: "朝东",
   },
   {
-    value: 4,
+    value: "2",
     label: "朝西",
   },
   {
-    value: 5,
+    value: "5",
     label: "东南",
   },
   {
-    value: 6,
+    value: "6",
     label: "西南",
   },
   {
-    value: 7,
+    value: "9",
     label: "南北",
   },
   {
-    value: 8,
+    value: "8",
     label: "西北",
   },
   {
-    value: 9,
+    value: "7",
     label: "东北",
   },
 ];
 const houseTypes = [
   {
-    value: 0,
+    value: "",
     label: "不限",
   },
   {
-    value: 1,
+    value: "1",
     label: "一室",
   },
   {
-    value: 2,
+    value: "2",
     label: "二室",
   },
   {
-    value: 3,
+    value: "3",
     label: "三室",
   },
   {
-    value: 4,
+    value: "4",
     label: "四室",
   },
   {
-    value: 5,
+    value: "5",
     label: "五室",
   },
   {
-    value: 6,
+    value: "6",
     label: "五室以上",
   },
 ];
