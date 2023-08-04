@@ -117,7 +117,8 @@
             <div><i class="icofont-hotel-boy-alt text-warning fs-5"></i>
                 <span class="fs-7 text-secondary"><%= detail.username %></span></div>
             <div>
-                <a class="btn btn-success" href="javascript:void(0);" @click="goWechat(<%= detail.param.wx %>)">
+                <span class="text-success fs-7 me-1" v-if="showCopyMsg">复制微信号成功</span>
+                <a class="btn btn-success me-1" href="javascript:void(0);" @click="goWechat">
                     <i class="icofont-wechat"></i> 联系TA
                 </a>
                 <a class="btn btn-primary" href="tel:63<%= detail.mobile %>">
@@ -128,7 +129,27 @@
     </div>
 </div>
 <script>
-    Vue.createApp().mount('#app');
+    Vue.createApp({
+        data() {
+            return {
+                showCopyMsg: false};
+        },
+        methods: {
+            goWechat(v) {
+                navigator.clipboard.writeText("<%- detail.param.wx %>")
+                    .then(() => {
+                        this.showCopyMsg = true;
+                        setTimeout(() => {
+                            this.showCopyMsg = false;
+                            window.location.href = "weixin://";
+                        }, 1500);
+                    })
+                    .catch(err => {
+                        console.error("Failed to copy: ", err);
+                    });
+            }
+        }
+    }).mount('#app');
 </script>
 </body>
 </html>
