@@ -2,7 +2,8 @@
     <% var topList = rentList.filter(v => v.topdateline && new Date(v.topdateline).getTime() > new Date().getTime()) %>
     <% var noTopList = rentList.filter(v => !v.topdateline || new Date(v.topdateline).getTime() < new Date().getTime()) %>
     <% for (const item of topList.concat(noTopList)) { %>
-        <div class="row rent-item-row cursor-pointer align-items-stretch border-bottom p-2">
+        <div class="row rent-item-row cursor-pointer align-items-stretch border-bottom p-2"
+             @click="goDetail(<%- item.id %>)">
             <div class="col-4 position-relative p-0">
                 <img src="<%= item.param.cover; %>" alt="<%= item.title; %>"
                      class="w-100 h-100"/>

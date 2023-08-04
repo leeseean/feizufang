@@ -197,6 +197,9 @@
                     }
                 }
                 window.location.href = window.location.origin + window.location.pathname + "?" + Qs.stringify(q);
+            },
+            goDetail(id) {
+                window.location.href = '/detail/' + id;
             }
         }
     }).mount('#app');

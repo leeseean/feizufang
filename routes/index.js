@@ -82,7 +82,6 @@ router.get("/", async function (req, res, next) {
       rentList = await prisma.$queryRawUnsafe(raw);
     }
   }
-  console.log(tagFilter);
   res.render("index", { rentList, dressFilterList, publishTypeList });
 });
 

@@ -6,6 +6,7 @@ var logger = require("morgan");
 const session = require("express-session");
 const { checkLogin } = require("./routes/middleware");
 var indexRouter = require("./routes/index");
+var detailRouter = require("./routes/detail");
 var userRouter = require("./routes/user");
 var rentsRouter = require("./routes/rents");
 var app = express();
@@ -32,6 +33,7 @@ app.get("/", (req, res) => {
   res.redirect("/index");
 });
 app.use("/index", indexRouter);
+app.use("/detail", detailRouter);
 app.use("/user", userRouter);
 app.use("/rents", rentsRouter);
 

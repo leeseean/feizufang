@@ -312,7 +312,7 @@ var globalData = {
         },
         {
           value: "7",
-          label: "电视",
+          label: "厨具",
         },
         {
           value: "8",
