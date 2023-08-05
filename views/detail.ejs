@@ -4,55 +4,64 @@
 <div id="app">
     <div class="position-fixed top-0 start-0 end-0 bg-success z-3" style="height: 48px">
         <div class="d-flex justify-content-between align-items-center ps-2 pe-2 h-100 cursor-pointer">
-            <i class="icofont-reply text-light fs-5"></i>
+            <i class="icofont-reply text-light fs-5" @click="goBack"></i>
             <span class="fs-6 text-light "><%= detail.ftitle %></span>
-            <i class="icofont-ui-home text-light fs-5"></i>
+            <i class="icofont-ui-home text-light fs-5" @click="goHome"></i>
         </div>
     </div>
-    <div class="position-relative">
-        <div id="carousel" class="carousel slide" style="height: 260px;">
-            <div class="carousel-indicators">
-                <% for (const index in detail.param.images) { %>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="<%= index %>" class="active"
-                            aria-current="true" aria-label="Slide <%= index + 1 %>"></button>
-                <% } %>
+    <div id="canvas-view">
+        <div class="position-relative">
+            <div id="carousel" class="carousel slide" style="height: 260px;">
+                <div class="carousel-indicators">
+                    <% for (const index in detail.param.images) { %>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="<%= index %>" class="active"
+                                aria-current="true" aria-label="Slide <%= index + 1 %>"></button>
+                    <% } %>
+                </div>
+                <div class="carousel-inner">
+                    <% for (const item of detail.param.images) { %>
+                        <div class="carousel-item">
+                            <img src="<%= item %>" crossorigin="anonymous" class="d-block w-100"
+                                 alt="菲律宾租房，马尼拉租房，玛卡提租房"/>
+                        </div>
+                    <% } %>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <% for (const item of detail.param.images) { %>
-                    <div class="carousel-item">
-                        <img src="<%= item %>" crossorigin="anonymous" class="d-block w-100"
-                             alt="菲律宾租房，马尼拉租房，玛卡提租房"/>
-                    </div>
-                <% } %>
+        </div>
+        <div class="p-2 row border-bottom">
+            <div class="col-11 fs-5 text-black fw-bold"><%= detail.title %></div>
+            <div class="col-1 d-flex align-items-center ps-0" @click="share">
+                <i class="icofont-share text-success fs-5 cursor-pointer"></i>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>
-    <div class="p-2 row border-bottom">
-        <div class="col-11 fs-5 text-black fw-bold"><%= detail.title %></div>
-        <div class="col-1 d-flex align-items-center ps-0">
-            <i class="icofont-share text-success fs-5 cursor-pointer"></i>
+        <div v-show="showQrcode" class="p-2 row">
+            <div id="qrcode" class="col-4" style=" height:96px;"></div>
+            <div class="col-8 d-flex align-items-center ">
+                <p>长按识别二维码，了解更多
+                    <br/>来自[{{host}}]</p>
+            </div>
         </div>
-    </div>
-    <div class="p-2 row border-bottom">
-        <div class="border-end col-4 text-center">
-            <div>租金</div>
-            <div class="text-danger fs-6"><%= detail.price %><%= detail.price_text %></div>
-        </div>
-        <div class="border-end col-4 text-center">
-            <div>户型</div>
-            <div class="text-danger fs-6"><%= detail.room %>室<%= detail.office %>厅<%= detail.guard %>卫</div>
-        </div>
-        <div class="col-4 text-center">
-            <div>面积</div>
-            <div class="text-danger fs-6"><%= detail.square %>平米</div>
+        <div class="p-2 row border-bottom">
+            <div class="border-end col-4 text-center">
+                <div>租金</div>
+                <div class="text-danger fs-6"><%= detail.price %><%= detail.price_text %></div>
+            </div>
+            <div class="border-end col-4 text-center">
+                <div>户型</div>
+                <div class="text-danger fs-6"><%= detail.room %>室<%= detail.office %>厅<%= detail.guard %>卫</div>
+            </div>
+            <div class="col-4 text-center">
+                <div>面积</div>
+                <div class="text-danger fs-6"><%= detail.square %>平米</div>
+            </div>
         </div>
     </div>
     <div class="p-2 pb-0">
@@ -127,14 +136,51 @@
             </div>
         </div>
     </div>
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-6">长按图片保存,发给好友或朋友圈</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modal-body" class="modal-body">
+                    <img class="img-fluid" :src="canvasUrl"></img>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     Vue.createApp({
         data() {
             return {
-                showCopyMsg: false};
+                showCopyMsg: false,
+                canvasUrl: '',
+                showQrcode: false,
+                host: location.host,
+                qrCode: null
+            };
         },
         methods: {
+            share() {
+                if (!this.qrCode) {
+                    this.qrCode = new QRCode(document.getElementById("qrcode"), {
+                        text: location.href,
+                        width: 96,
+                        height: 96,
+                    });
+                }
+                new bootstrap.Modal('#modal', {}).toggle();
+                this.showQrcode = true;
+                this.$nextTick(() => {
+                    html2canvas(document.getElementById('canvas-view')).then((canvas) => {
+                        this.canvasUrl = canvas.toDataURL();
+                    });
+                });
+                document.querySelector('#modal').addEventListener('hidden.bs.modal', () => {
+                    this.showQrcode = false;
+                });
+            },
             goWechat(v) {
                 navigator.clipboard.writeText("<%- detail.param.wx %>")
                     .then(() => {
@@ -147,6 +193,12 @@
                     .catch(err => {
                         console.error("Failed to copy: ", err);
                     });
+            },
+            goBack() {
+                window.location.href = document.referrer;
+            },
+            goHome() {
+                window.location.href = '/index';
             }
         }
     }).mount('#app');
