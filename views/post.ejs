@@ -32,45 +32,83 @@
                class="fs-1 text-warning input-file d-flex align-items-center justify-content-center border-1 border">+</label>
 
     </div>
-    <div class="text-warning text-center fs-7 pb-2">上传图片：可批量上传多张房源图片（第一张为封面）</div>
+    <div class="position-relative text-warning text-center fs-7 pb-2">上传图片：可批量上传多张房源图片（第一张为封面）
+        <div class="invalid-tooltip start-50 translate-middle-x">
+            请上传照片
+        </div>
+    </div>
     <div class="row p-2 border-bottom border-top">
-        <div class="col text-center">
+        <div class="position-relative col text-center">
             <div class="fs-7 text-secondary">方式</div>
             <div class="text-success" id="trigger1">请选择</div>
+            <div v-if="trigger1.length === 0" class="invalid-tooltip start-50 translate-middle-x">
+                请选择
+            </div>
         </div>
-        <div class="col text-center">
+        <div class="position-relative col text-center">
             <div class="fs-7 text-secondary">户型</div>
             <div class="text-success" id="trigger2">请选择</div>
+            <div v-if="trigger2.length === 0" class="invalid-tooltip start-50 translate-middle-x">
+                请选择
+            </div>
         </div>
-        <div class="col text-center">
+        <div class="position-relative col text-center">
             <div class="fs-7 text-secondary">装修/房型/朝向</div>
             <div class="text-success" id="trigger3">请选择</div>
+            <div v-if="trigger3.length === 0" class="invalid-tooltip start-50 translate-middle-x">
+                请选择
+            </div>
         </div>
     </div>
     <div class="p-2">
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputCity">区域</label>
-            <div class="col-9" id="trigger4">
+            <div class="col-9 position-relative d-flex align-items-center" id="trigger4">
                 <div class="form-control text-success" id="inputCity">请选择</div>
+                <div v-if="trigger4.length === 0" class="invalid-tooltip">
+                    请选择区域
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputPUblish">地址</label>
+            <div class="col-9 position-relative">
+                <select v-model="publish_type" type="text" class="form-select" id="inputPUblish">
+                    <option>个人</option>
+                    <option>中介</option>
+                </select>
+                <div class="invalid-tooltip">
+                    请填写来源
+                </div>
             </div>
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputMap">地址</label>
-            <div class="col-9">
-                <input type="text" class="form-control" placeholder="请填写google地图详细地址" id="inputMap"/>
+            <div class="col-9 position-relative">
+                <input v-model="community" type="text" class="form-control" placeholder="请填写google地图详细地址"
+                       id="inputMap"/>
+                <div class="invalid-tooltip">
+                    请填写地址
+                </div>
             </div>
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputSquare">面积</label>
-            <div class="col-9">
-                <input type="text" class="form-control" placeholder="请输入面积" id="inputSquare"/>
+            <div class="col-9 position-relative d-flex justify-content-between align-items-center">
+                <input v-model="square" type="number" class="form-control" placeholder="请输入面积"
+                       id="inputSquare"/><span
+                        class="text-nowrap ms-2">平米</span>
+                <div class="invalid-tooltip">
+                    请填写面积
+                </div>
             </div>
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputPrice">租金</label>
             <div class="col-9 d-flex justify-content-between">
-                <input type="number" class="form-control  w-50" placeholder="请输入租金" id="inputPrice"/>
-                <select class="form-control w-auto  text-center">
+                <input v-model="price" type="number" class="form-control  w-50" placeholder="请输入租金"
+                       id="inputPrice"/>
+                <select v-model="price_text" class="form-control w-auto  text-center">
                     <option>月</option>
                     <option>年</option>
                     <option>日</option>
@@ -86,29 +124,31 @@
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputWx">微信号</label>
             <div class="col-9">
-                <input type="text" class="form-control" placeholder="请输入微信号" id="inputWx"/>
+                <input v-model="wx" type="text" class="form-control" placeholder="请输入微信号" id="inputWx"/>
             </div>
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputTelegram">纸飞机</label>
             <div class="col-9">
-                <input type="text" class="form-control" placeholder="请输入telegram" id="inputTelegram"/>
+                <input v-model="telegram" type="text" class="form-control" placeholder="请输入telegram"
+                       id="inputTelegram"/>
             </div>
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputTitle">标题</label>
             <div class="col-9">
-                <input type="text" class="form-control" placeholder="请输入标题" id="inputTitle"/>
+                <input v-model="title" type="text" class="form-control" placeholder="请输入标题" id="inputTitle"/>
             </div>
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputContent">描述</label>
             <div class="col-9">
-                <textarea class="form-control" rows="6" placeholder="请输入房源描述" id="inputContent"></textarea>
+                <textarea v-model="content" class="form-control" rows="6" placeholder="请输入房源描述"
+                          id="inputContent"></textarea>
             </div>
         </div>
         <div class="row mb-2">
-            <label class="col-3 text-center col-form-label" >
+            <label class="col-3 text-center col-form-label">
                 <div>房屋配置</div>
                 <div class="text-secondary fs-7">(多选)</div>
             </label>
@@ -123,7 +163,7 @@
             </div>
         </div>
         <div class="row">
-            <label class="col-3 text-center col-form-label" >
+            <label class="col-3 text-center col-form-label">
                 <div>特色标签</div>
                 <div class="text-secondary fs-7">(多选)</div>
             </label>
@@ -152,7 +192,21 @@
                 imgUrls: [],
                 trigger1: [],
                 trigger2: [],
-                trigger3: []
+                trigger3: [],
+                trigger4: [],
+                content: '',
+                price: '',
+                price_text: '',
+                publish_type: '',
+                orientation: '',
+                decoration_type: '',
+                house_type: '',
+                room: '',
+                floor: '',
+                count_floor: '',
+                community: '',
+                province: '',
+                vice_class: ''// 整租，合租
             };
         },
         computed: {
@@ -312,6 +366,83 @@
             ], () => {
             }, (index, data) => {
                 this.trigger3 = data;
+            });
+            this.initMobileSelect('#trigger4', '区域', [
+                {
+                    data: [
+                        {
+                            id: "1",
+                            value: "Metro Manila",
+                            childs: [
+                                {
+                                    id: "1.1",
+                                    value: "Manila",
+                                },
+                                {
+                                    id: "1.2",
+                                    value: "Makati",
+                                },
+                                {
+                                    id: "1.9",
+                                    value: "Taguig(BGC)",
+                                },
+                                {
+                                    id: "1.3",
+                                    value: "Pasay",
+                                },
+                                {
+                                    id: "1.4",
+                                    value: "Paranaque",
+                                },
+                                {
+                                    id: "1.5",
+                                    value: "Pasig",
+                                },
+                                {
+                                    id: "1.6",
+                                    value: "Muntinlupa",
+                                },
+                                {
+                                    id: "1.7",
+                                    value: "Quezon City",
+                                },
+                                {
+                                    id: "1.8",
+                                    value: "Mandaluyong",
+                                },
+
+                                {
+                                    id: "1.10",
+                                    value: "Caloocan",
+                                },
+                                {
+                                    id: "1.11",
+                                    value: "Las Piñas",
+                                },
+                                {
+                                    id: "1.12",
+                                    value: "Malabon",
+                                },
+
+                                {
+                                    id: "1.13",
+                                    value: "Valenzuela",
+                                },
+                                {
+                                    id: "1.14",
+                                    value: "San Juan",
+                                },
+                                {
+                                    id: "1.15",
+                                    value: "其他",
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ], () => {
+            }, (index, data) => {
+                this.trigger4 = data;
             });
         },
         methods: {
