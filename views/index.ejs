@@ -97,6 +97,8 @@
         </div>
     </div>
     <%- include('./share/list'); %>
+    <img @click="goPost" class="position-fixed img-fluid" style="width: 60px;bottom: 60px; right: 20px;"
+         src="/images/add.png"/>
 </div>
 <script>
     Vue.createApp({
@@ -120,6 +122,9 @@
             }
         },
         methods: {
+            goPost() {
+                window.location.href = '/post';
+            },
             toggleNavShow(v) {
                 for (const key in this.showNavConfig) {
                     if (String(key) !== String(v)) {
