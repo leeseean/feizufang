@@ -1,0 +1,370 @@
+<html>
+<%- include("./share/head.ejs") %>
+<style>
+    .input-file {
+        width: 60px;
+        height: 60px;
+    }
+
+    .input-file-close {
+        width: 15px;
+        height: 15px;
+    }
+</style>
+<body>
+<div class="container" id="app">
+    <div class="position-fixed top-0 start-0 end-0 bg-success z-3" style="height: 48px">
+        <div class="d-flex justify-content-between align-items-center ps-2 pe-2 h-100 cursor-pointer">
+            <i class="icofont-reply text-light fs-5" @click="goBack"></i>
+            <span class="fs-6 text-light ">发布信息</span>
+            <i class="icofont-ui-home text-light fs-5" @click="goHome"></i>
+        </div>
+    </div>
+    <input @change="upload" type="file" multiple="multiple" id="input-file" name="input-file" class="position-absolute"
+           style="top: -200px"/>
+    <div class="p-2 d-flex justify-content-center" style="margin-top: 48px;">
+        <div class="input-file border me-1 position-relative" v-for="(url, index) in imgUrls" :key="url">
+            <img class="img-thumbnail" :src="url"/>
+            <img @click="removeImg(index)" class="position-absolute top-0 end-0 input-file-close"
+                 src="/images/close.png"/>
+        </div>
+        <label for="input-file"
+               class="fs-1 text-warning input-file d-flex align-items-center justify-content-center border-1 border">+</label>
+
+    </div>
+    <div class="text-warning text-center fs-7 pb-2">上传图片：可批量上传多张房源图片（第一张为封面）</div>
+    <div class="row p-2 border-bottom border-top">
+        <div class="col text-center">
+            <div class="fs-7 text-secondary">方式</div>
+            <div class="text-success" id="trigger1">请选择</div>
+        </div>
+        <div class="col text-center">
+            <div class="fs-7 text-secondary">户型</div>
+            <div class="text-success" id="trigger2">请选择</div>
+        </div>
+        <div class="col text-center">
+            <div class="fs-7 text-secondary">装修/房型/朝向</div>
+            <div class="text-success" id="trigger3">请选择</div>
+        </div>
+    </div>
+    <div class="p-2">
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputCity">区域</label>
+            <div class="col-9" id="trigger4">
+                <div class="form-control text-success" id="inputCity">请选择</div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputMap">地址</label>
+            <div class="col-9">
+                <input type="text" class="form-control" placeholder="请填写google地图详细地址" id="inputMap"/>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputSquare">面积</label>
+            <div class="col-9">
+                <input type="text" class="form-control" placeholder="请输入面积" id="inputSquare"/>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputPrice">租金</label>
+            <div class="col-9 d-flex justify-content-between">
+                <input type="number" class="form-control  w-50" placeholder="请输入租金" id="inputPrice"/>
+                <select class="form-control w-auto  text-center">
+                    <option>月</option>
+                    <option>年</option>
+                    <option>日</option>
+                </select>
+                <div class="form-control  w-auto">
+                    <input class="form-check-input" type="checkbox" id="priceCheck">
+                    <label class="form-check-label ms-1" for="priceCheck">
+                        面议
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputWx">微信号</label>
+            <div class="col-9">
+                <input type="text" class="form-control" placeholder="请输入微信号" id="inputWx"/>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputTelegram">纸飞机</label>
+            <div class="col-9">
+                <input type="text" class="form-control" placeholder="请输入telegram" id="inputTelegram"/>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputTitle">标题</label>
+            <div class="col-9">
+                <input type="text" class="form-control" placeholder="请输入标题" id="inputTitle"/>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputContent">描述</label>
+            <div class="col-9">
+                <textarea class="form-control" rows="6" placeholder="请输入房源描述" id="inputContent"></textarea>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" >
+                <div>房屋配置</div>
+                <div class="text-secondary fs-7">(多选)</div>
+            </label>
+            <div class="col-9 row g-2 mt-0">
+                <div class="col" v-for="(item, index) in furnishFilterList" :key="item.value">
+                    <input type="checkbox" :value="item.value" v-model="furnishFilter" class="btn-check"
+                           :id="'furnishFilter' + String(index)"
+                           autocomplete="off">
+                    <label class="btn btn-outline-success p-1 w-100 text-nowrap"
+                           :for="'furnishFilter' + String(index)">{{item.label}}</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-3 text-center col-form-label" >
+                <div>特色标签</div>
+                <div class="text-secondary fs-7">(多选)</div>
+            </label>
+            <div class="col-9 row g-2 mt-0">
+                <div class="col" v-for="(item, index) in tagFilterList" :key="item.value">
+                    <input type="checkbox" :value="item.value" v-model="tagFilter" class="btn-check"
+                           :id="'tagFilter' + String(index)"
+                           autocomplete="off">
+                    <label class="btn btn-outline-success p-1 w-100 text-nowrap"
+                           :for="'tagFilter' + String(index)">{{item.label}}</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <button class="btn btn-primary w-50 m-auto rounded-5">确认发布</button>
+        </div>
+    </div>
+</div>
+<script>
+    Vue.createApp({
+        data() {
+            return {
+                globalData,
+                furnishFilter: [],
+                tagFilter: [],
+                imgUrls: [],
+                trigger1: [],
+                trigger2: [],
+                trigger3: []
+            };
+        },
+        computed: {
+            furnishFilterList() {
+                return this.globalData.filterTypes.find(o => o.model === 'furnishFilter').list;
+            },
+            tagFilterList() {
+                return this.globalData.filterTypes.find(o => o.model === 'tagFilter').list;
+            }
+        },
+        created() {
+
+        },
+        mounted() {
+            this.initMobileSelect('#trigger1', '出租类型', [
+                {
+                    data: [
+                        {id: '1', value: '整租'},
+                        {id: '2', value: '出租'},
+                        {id: '3', value: '合租'},
+                    ]
+                }
+            ], () => {
+            }, (index, data) => {
+                this.trigger1 = data;
+            });
+            this.initMobileSelect('#trigger2', '户型', [{
+                data: [
+                    {id: '1', value: '1室'},
+                    {id: '2', value: '2室'},
+                    {id: '3', value: '3室'},
+                    {id: '4', value: '4室'},
+                    {id: '5', value: '5室'},
+                    {id: '6', value: '6室'},
+                    {id: '7', value: '7室'},
+                    {id: '8', value: '8室'},
+                    {id: '9', value: '9室'},
+                    {id: '10', value: '10室'},
+                ]
+            }, {
+                data: [
+                    {id: '0', value: '0厅'},
+                    {id: '1', value: '1厅'},
+                    {id: '2', value: '2厅'},
+                    {id: '3', value: '3厅'},
+                    {id: '4', value: '4厅'},
+                    {id: '5', value: '5厅'},
+                    {id: '6', value: '6厅'},
+                    {id: '7', value: '7厅'},
+                    {id: '8', value: '8厅'},
+                    {id: '9', value: '9厅'},
+                    {id: '10', value: '10厅'},
+                ]
+            }, {
+                data: [
+                    {id: '0', value: '0卫'},
+                    {id: '1', value: '1卫'},
+                    {id: '2', value: '2卫'},
+                    {id: '3', value: '3卫'},
+                    {id: '4', value: '4卫'},
+                    {id: '5', value: '5卫'},
+                    {id: '6', value: '6卫'},
+                    {id: '7', value: '7卫'},
+                    {id: '8', value: '8卫'},
+                    {id: '9', value: '9卫'},
+                    {id: '10', value: '10卫'},
+                ]
+            }], () => {
+            }, (index, data) => {
+                this.trigger2 = data;
+            });
+            this.initMobileSelect('#trigger3', '装修/房型/朝向', [
+                {
+                    data: [
+                        {
+                            id: "1",
+                            value: "毛坯",
+                        },
+                        {
+                            id: "2",
+                            value: "普通装修",
+                        },
+                        {
+                            id: "3",
+                            value: "精装修",
+                        },
+                        {
+                            id: "4",
+                            value: "豪华装修",
+                        },
+                    ],
+                },
+                {
+                    data: [{
+                        id: "1",
+                        value: "普通住宅",
+                    },
+                        {
+                            id: "2",
+                            value: "公寓式",
+                        },
+                        {
+                            id: "3",
+                            value: "复式",
+                        },
+                        {
+                            id: "4",
+                            value: "跃层式",
+                        },
+                        {
+                            id: "5",
+                            value: "小户型",
+                        },
+                        {
+                            id: "6",
+                            value: "花园式",
+                        },]
+                },
+                {
+                    data: [{
+                        id: "3",
+                        value: "朝南",
+                    },
+                        {
+                            id: "4",
+                            value: "朝北",
+                        },
+                        {
+                            id: "1",
+                            value: "朝东",
+                        },
+                        {
+                            id: "2",
+                            value: "朝西",
+                        },
+                        {
+                            id: "5",
+                            value: "东南",
+                        },
+                        {
+                            id: "6",
+                            value: "西南",
+                        },
+                        {
+                            id: "9",
+                            value: "南北",
+                        },
+                        {
+                            id: "8",
+                            value: "西北",
+                        },
+                        {
+                            id: "7",
+                            value: "东北",
+                        }]
+                }
+            ], () => {
+            }, (index, data) => {
+                this.trigger3 = data;
+            });
+        },
+        methods: {
+            initMobileSelect(el, title, wheelsData, transitionEnd, callback) {
+                return new MobileSelect({
+                    trigger: el,
+                    title: title,
+                    wheels: wheelsData,
+                    position: [2], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+                    transitionEnd: (indexArr, data) => {
+                        transitionEnd(indexArr, data);
+                    },
+                    callback: (indexArr, data) => {
+                        callback(indexArr, data);
+                    }
+                });
+            },
+            removeImg(index) {
+                this.imgUrls.splice(index, 1);
+            },
+            upload(event) {
+                const selectedFiles = event.target.files;
+
+                for (let i = 0; i < selectedFiles.length; i++) {
+                    const file = selectedFiles[i];
+
+                    if (file) {
+                        // Check file size
+                        if (file.size > 10 * 1024 * 1024) {
+                            alert(`File ${file.name} size exceeds 10MB. Skipping.`);
+                            continue;
+                        }
+
+                        // Check file type
+                        if (!file.type.startsWith("image/")) {
+                            alert(`File ${file.name} is not an image. Skipping.`);
+                            continue;
+                        }
+
+                        // Convert the image to Base64
+                        const reader = new FileReader();
+                        reader.onload = (event) => {
+                            const base64Data = event.target.result;
+                            if (!this.imgUrls.includes(base64Data)) {
+                                this.imgUrls.push(base64Data);
+                            }
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                }
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

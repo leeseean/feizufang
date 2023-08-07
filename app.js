@@ -7,6 +7,7 @@ const session = require("express-session");
 const { checkLogin } = require("./routes/middleware");
 var indexRouter = require("./routes/index");
 var detailRouter = require("./routes/detail");
+var postRouter = require("./routes/post");
 var userRouter = require("./routes/user");
 var rentsRouter = require("./routes/rents");
 var app = express();
@@ -35,6 +36,7 @@ app.get("/", (req, res) => {
 app.use("/index", indexRouter);
 app.use("/detail", detailRouter);
 app.use("/user", userRouter);
+app.use("/post", postRouter);
 app.use("/rents", rentsRouter);
 
 // catch 404 and forward to error handler

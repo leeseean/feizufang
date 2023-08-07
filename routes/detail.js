@@ -28,4 +28,5 @@ router.get("/:id", async (req, res) => {
     furnishList,
   });
 });
+
 module.exports = router;
