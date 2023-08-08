@@ -33,7 +33,7 @@
 
     </div>
     <div class="position-relative text-warning text-center fs-7 pb-2">上传图片：可批量上传多张房源图片（第一张为封面）
-        <div class="invalid-tooltip start-50 translate-middle-x">
+        <div v-if="imgUrls.length === 0 && showErrFlag" class="invalid-tooltip d-block start-50 translate-middle-x">
             请上传照片
         </div>
     </div>
@@ -41,21 +41,24 @@
         <div class="position-relative col text-center">
             <div class="fs-7 text-secondary">方式</div>
             <div class="text-success" id="trigger1">请选择</div>
-            <div v-if="trigger1.length === 0" class="invalid-tooltip start-50 translate-middle-x">
+            <div v-if="trigger1Data.length === 0 && showErrFlag"
+                 class="invalid-tooltip d-block start-50 translate-middle-x">
                 请选择
             </div>
         </div>
         <div class="position-relative col text-center">
             <div class="fs-7 text-secondary">户型</div>
             <div class="text-success" id="trigger2">请选择</div>
-            <div v-if="trigger2.length === 0" class="invalid-tooltip start-50 translate-middle-x">
+            <div v-if="trigger2Data.length === 0 && showErrFlag"
+                 class="invalid-tooltip d-block start-50 translate-middle-x">
                 请选择
             </div>
         </div>
         <div class="position-relative col text-center">
             <div class="fs-7 text-secondary">装修/房型/朝向</div>
             <div class="text-success" id="trigger3">请选择</div>
-            <div v-if="trigger3.length === 0" class="invalid-tooltip start-50 translate-middle-x">
+            <div v-if="trigger3Data.length === 0 && showErrFlag"
+                 class="invalid-tooltip d-block start-50 translate-middle-x">
                 请选择
             </div>
         </div>
@@ -65,19 +68,19 @@
             <label class="col-3 text-center col-form-label" for="inputCity">区域</label>
             <div class="col-9 position-relative d-flex align-items-center" id="trigger4">
                 <div class="form-control text-success" id="inputCity">请选择</div>
-                <div v-if="trigger4.length === 0" class="invalid-tooltip">
+                <div v-if="trigger4Data.length === 0 && showErrFlag" class="invalid-tooltip d-block">
                     请选择区域
                 </div>
             </div>
         </div>
         <div class="row mb-2">
-            <label class="col-3 text-center col-form-label" for="inputPUblish">地址</label>
+            <label class="col-3 text-center col-form-label" for="inputPUblish">来源</label>
             <div class="col-9 position-relative">
                 <select v-model="publish_type" type="text" class="form-select" id="inputPUblish">
-                    <option>个人</option>
-                    <option>中介</option>
+                    <option value="1">个人</option>
+                    <option value="2">中介</option>
                 </select>
-                <div class="invalid-tooltip">
+                <div v-if="!publish_type && showErrFlag" class="invalid-tooltip d-block">
                     请填写来源
                 </div>
             </div>
@@ -87,7 +90,7 @@
             <div class="col-9 position-relative">
                 <input v-model="community" type="text" class="form-control" placeholder="请填写google地图详细地址"
                        id="inputMap"/>
-                <div class="invalid-tooltip">
+                <div v-if="!community && showErrFlag" class="invalid-tooltip d-block">
                     请填写地址
                 </div>
             </div>
@@ -95,26 +98,40 @@
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputSquare">面积</label>
             <div class="col-9 position-relative d-flex justify-content-between align-items-center">
-                <input v-model="square" type="number" class="form-control" placeholder="请输入面积"
+                <input v-model="square" type="number" min="0" class="form-control" placeholder="请输入面积"
                        id="inputSquare"/><span
                         class="text-nowrap ms-2">平米</span>
-                <div class="invalid-tooltip">
+                <div v-if="!square && showErrFlag" class="invalid-tooltip d-block">
                     请填写面积
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputSquare">层数</label>
+            <div class="col-9 position-relative d-flex justify-content-between align-items-center">
+                第 <input v-model="floor" type="number" min="0" class="form-control ms-2" placeholder="所在层"
+                          id="inputSquare"/><span
+                        class="text-nowrap ms-2">层，共</span><input v-model="count_floor" min="0" type="number"
+                                                                    class="form-control ms-2" placeholder="总楼层"
+                                                                    id="inputSquare"/><span class="ms-2">层</span>
+                <div v-if="!square && showErrFlag" class="invalid-tooltip d-block">
+                    请填写层
                 </div>
             </div>
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputPrice">租金</label>
             <div class="col-9 d-flex justify-content-between">
-                <input v-model="price" type="number" class="form-control  w-50" placeholder="请输入租金"
+                <input :disabled="priceNegotiable" v-model="price" type="number" class="form-control" style="width: 40%"
+                       placeholder="请输入租金"
                        id="inputPrice"/>
-                <select v-model="price_text" class="form-control w-auto  text-center">
-                    <option>月</option>
-                    <option>年</option>
-                    <option>日</option>
+                <select :disabled="priceNegotiable" v-model="price_text" class="form-control w-auto  text-center">
+                    <option>P/月</option>
+                    <option>P/年</option>
+                    <option>P/日</option>
                 </select>
                 <div class="form-control  w-auto">
-                    <input class="form-check-input" type="checkbox" id="priceCheck">
+                    <input v-model="priceNegotiable" class="form-check-input" type="checkbox" id="priceCheck">
                     <label class="form-check-label ms-1" for="priceCheck">
                         面议
                     </label>
@@ -130,7 +147,7 @@
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputTelegram">纸飞机</label>
             <div class="col-9">
-                <input v-model="telegram" type="text" class="form-control" placeholder="请输入telegram"
+                <input v-model="zfj" type="text" class="form-control" placeholder="请输入telegram"
                        id="inputTelegram"/>
             </div>
         </div>
@@ -178,7 +195,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <button class="btn btn-primary w-50 m-auto rounded-5">确认发布</button>
+            <button @click="postForm" class="btn btn-primary w-50 m-auto rounded-5">确认发布</button>
         </div>
     </div>
 </div>
@@ -187,26 +204,26 @@
         data() {
             return {
                 globalData,
+                files: [],
+                imgUrls: [],
+                showErrFlag: false,
                 furnishFilter: [],
                 tagFilter: [],
-                imgUrls: [],
-                trigger1: [],
-                trigger2: [],
-                trigger3: [],
-                trigger4: [],
-                content: '',
-                price: '',
-                price_text: '',
-                publish_type: '',
-                orientation: '',
-                decoration_type: '',
-                house_type: '',
-                room: '',
-                floor: '',
-                count_floor: '',
+                trigger1Data: [],
+                trigger2Data: [],
+                trigger3Data: [],
+                trigger4Data: [],
+                floor: '7',
+                count_floor: '22',
+                wx: '',
+                square: '22',
                 community: '',
-                province: '',
-                vice_class: ''// 整租，合租
+                zfj: '',
+                content: '',
+                price: '20000',
+                price_text: 'P/月',
+                priceNegotiable: false,
+                publish_type: '',
             };
         },
         computed: {
@@ -221,7 +238,7 @@
 
         },
         mounted() {
-            this.initMobileSelect('#trigger1', '出租类型', [
+            this.trigger1 = this.initMobileSelect('#trigger1', '出租类型', [
                 {
                     data: [
                         {id: '1', value: '整租'},
@@ -230,10 +247,10 @@
                     ]
                 }
             ], () => {
-            }, (index, data) => {
-                this.trigger1 = data;
+            }, (i, data) => {
+                this.trigger1Data = data;
             });
-            this.initMobileSelect('#trigger2', '户型', [{
+            this.trigger2 = this.initMobileSelect('#trigger2', '户型', [{
                 data: [
                     {id: '1', value: '1室'},
                     {id: '2', value: '2室'},
@@ -275,10 +292,10 @@
                     {id: '10', value: '10卫'},
                 ]
             }], () => {
-            }, (index, data) => {
-                this.trigger2 = data;
+            }, (i, data) => {
+                this.trigger2Data = data;
             });
-            this.initMobileSelect('#trigger3', '装修/房型/朝向', [
+            this.trigger3 = this.initMobileSelect('#trigger3', '装修/房型/朝向', [
                 {
                     data: [
                         {
@@ -364,10 +381,10 @@
                         }]
                 }
             ], () => {
-            }, (index, data) => {
-                this.trigger3 = data;
+            }, (i, data) => {
+                this.trigger3Data = data;
             });
-            this.initMobileSelect('#trigger4', '区域', [
+            this.trigger4 = this.initMobileSelect('#trigger4', '区域', [
                 {
                     data: [
                         {
@@ -441,8 +458,8 @@
                     ],
                 },
             ], () => {
-            }, (index, data) => {
-                this.trigger4 = data;
+            }, (i, data) => {
+                this.trigger4Data = data;
             });
         },
         methods: {
@@ -451,7 +468,7 @@
                     trigger: el,
                     title: title,
                     wheels: wheelsData,
-                    position: [2], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+                    position: [0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
                     transitionEnd: (indexArr, data) => {
                         transitionEnd(indexArr, data);
                     },
@@ -461,11 +478,12 @@
                 });
             },
             removeImg(index) {
+                this.files.splice(index, 1);
                 this.imgUrls.splice(index, 1);
             },
             upload(event) {
                 const selectedFiles = event.target.files;
-
+                console.log(selectedFiles);
                 for (let i = 0; i < selectedFiles.length; i++) {
                     const file = selectedFiles[i];
 
@@ -490,9 +508,52 @@
                                 this.imgUrls.push(base64Data);
                             }
                         };
+                        this.files.push(file);
                         reader.readAsDataURL(file);
                     }
                 }
+            },
+            async postForm() {
+                // 校验
+                this.showErrFlag = true;
+                if (this.files.length === 0 || this.trigger1Data.length === 0 || this.trigger2Data.length === 0 || this.trigger3Data.length === 0 || this.trigger4Data.length === 0 ||
+                    !this.community || !this.square) {
+                    return;
+                }
+                const formData = new FormData();
+                for (const fileIndex in this.files) {
+                    formData.append('flie', this.files[fileIndex]);
+                }
+                formData.append('wx', this.wx);
+                formData.append('zfj', this.zfj);
+                formData.append('title', this.title);
+                formData.append('content', this.content);
+                formData.append('price', this.price);
+                formData.append('price_text', this.price_text);
+                formData.append('priceNegotiable', this.priceNegotiable ? '1' : '0');
+                formData.append('publish_type', this.publish_type);
+                formData.append('decoration_type', this.trigger3.getValue()[0].id);
+                formData.append('house_type', this.trigger3.getValue()[1].id);
+                formData.append('orientation', this.trigger3.getValue()[2].id);
+                formData.append('room', this.trigger2.getValue()[0].id);
+                formData.append('office', this.trigger2.getValue()[1].id);
+                formData.append('guard', this.trigger2.getValue()[2].id);
+                formData.append('floor', this.floor);
+                formData.append('count_floor', this.count_floor);
+                formData.append('community', this.community);
+                formData.append('province', this.trigger4.getValue()[0].id);
+                formData.append('city', this.trigger4.getValue()[1].id);
+                formData.append('vice_class', this.trigger1.getValue()[0].id);
+                formData.append('configure', this.furnishFilter.join(','));
+                formData.append('tag', this.tagFilter.join(','));
+                const response = await fetch('/post', {
+                    method: 'POST',
+                    body: formData,
+                    /*headers: {
+                        // 设置请求头，指定为 multipart/form-data
+                        "Content-Type": "multipart/form-data"
+                    }*/
+                });
             }
         }
     }).mount('#app');
