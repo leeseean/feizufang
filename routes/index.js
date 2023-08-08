@@ -2,7 +2,11 @@ const express = require("express");
 const { PrismaClient } = require("@prisma/client");
 const prisma = require("../prisma/prisma");
 const router = express.Router();
-const { dressFilterList, publishTypeList } = require("../utils/staticData");
+const {
+  dressFilterList,
+  publishTypeList,
+  tagList,
+} = require("../utils/staticData");
 /* GET home page. */
 router.get("/", async function (req, res, next) {
   const {
@@ -67,7 +71,7 @@ router.get("/", async function (req, res, next) {
   if (facingFilter) {
     param.where.orientation = facingFilter;
   }
-  let rentList = await prisma.rents.findMany(param);
+  let rentList = await prisma.rentlist.findMany(param);
   const ids = rentList.map((item) => item.id).join(",");
   if (furnishFilter && tagFilter) {
     const raw = String.raw`SELECT * FROM feizufang.rents WHERE id IN (${ids}) AND FIND_IN_SET(${furnishFilter}, configure) AND FIND_IN_SET(${tagFilter}, tag);`;
@@ -82,7 +86,8 @@ router.get("/", async function (req, res, next) {
       rentList = await prisma.$queryRawUnsafe(raw);
     }
   }
-  res.render("index", { rentList, dressFilterList, publishTypeList });
+  console.log(rentList);
+  res.render("index", { rentList, dressFilterList, publishTypeList, tagList });
 });
 
 module.exports = router;

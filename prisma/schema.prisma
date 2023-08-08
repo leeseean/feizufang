@@ -80,3 +80,36 @@ model rents {
   top               Int?
   key               Int       @id @default(autoincrement())
 }
+
+model rentlist {
+  id              Int       @id
+  tel             String?   @db.VarChar(45)
+  wx              String?   @db.VarChar(45)
+  zfj             String?   @db.VarChar(45)
+  title           String?   @db.VarChar(255)
+  content         String?   @db.LongText
+  price           String?   @db.VarChar(45)
+  price_text      String?   @db.VarChar(45)
+  priceNegotiable String?   @db.VarChar(45)
+  publish_type    String?   @db.VarChar(45)
+  decoration_type String?   @db.VarChar(45)
+  house_type      String?   @db.VarChar(45)
+  orientation     String?   @db.VarChar(45)
+  room            String?   @db.VarChar(45)
+  office          String?   @db.VarChar(45)
+  guard           String?   @db.VarChar(45)
+  floor           String?   @db.VarChar(45)
+  count_floor     String?   @db.VarChar(45)
+  community       String?   @db.VarChar(255)
+  province        String?   @db.VarChar(45)
+  city            String?   @db.VarChar(45)
+  vice_class      String?   @db.VarChar(45)
+  configure       String?   @db.VarChar(255)
+  tag             String?   @db.VarChar(255)
+  imgs            Json?
+  username        String?   @db.VarChar(45)
+  dateline        DateTime? @db.DateTime(0)
+  updateline      DateTime? @db.DateTime(0)
+  topdateline     DateTime? @db.DateTime(0)
+  square          String?   @db.VarChar(45)
+}

@@ -139,6 +139,15 @@
             </div>
         </div>
         <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputWx">手机号</label>
+            <div class="col-9">
+                <input v-model="tel" type="number" class="form-control" placeholder="9396932154" id="inputWx"/>
+                <div v-if="!tel && showErrFlag" class="invalid-tooltip d-block">
+                    请填写手机号
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputWx">微信号</label>
             <div class="col-9">
                 <input v-model="wx" type="text" class="form-control" placeholder="请输入微信号" id="inputWx"/>
@@ -215,6 +224,7 @@
                 trigger4Data: [],
                 floor: '7',
                 count_floor: '22',
+                tel: '',
                 wx: '',
                 square: '22',
                 community: '',
@@ -483,7 +493,6 @@
             },
             upload(event) {
                 const selectedFiles = event.target.files;
-                console.log(selectedFiles);
                 for (let i = 0; i < selectedFiles.length; i++) {
                     const file = selectedFiles[i];
 
@@ -517,13 +526,14 @@
                 // 校验
                 this.showErrFlag = true;
                 if (this.files.length === 0 || this.trigger1Data.length === 0 || this.trigger2Data.length === 0 || this.trigger3Data.length === 0 || this.trigger4Data.length === 0 ||
-                    !this.community || !this.square) {
+                    !this.community || !this.square || !this.tel) {
                     return;
                 }
                 const formData = new FormData();
                 for (const fileIndex in this.files) {
                     formData.append('flie', this.files[fileIndex]);
                 }
+                formData.append('tel', this.tel);
                 formData.append('wx', this.wx);
                 formData.append('zfj', this.zfj);
                 formData.append('title', this.title);
@@ -549,10 +559,6 @@
                 const response = await fetch('/post', {
                     method: 'POST',
                     body: formData,
-                    /*headers: {
-                        // 设置请求头，指定为 multipart/form-data
-                        "Content-Type": "multipart/form-data"
-                    }*/
                 });
             }
         }

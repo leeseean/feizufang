@@ -22,6 +22,7 @@ const upload = multer({
         // 创建目录
         fs.mkdirSync(directoryPath);
       }
+      file.publicPath = "/upload/rents/" + date;
       cb(null, directoryPath);
     },
     filename: function (req, file, cb) {
@@ -33,16 +34,17 @@ const upload = multer({
 
 router.post("/", upload.any(), async (req, res) => {
   const files = req.files; //将获取的文件放到files
-  const urls = []; //定义一个空数组
+  const imgs = []; //定义一个空数组
   for (let file of files) {
     //将改完的文件写进空数组
-    urls.push("/upload/" + file.filename);
+    imgs.push(file.publicPath + "/" + file.filename);
   }
+
   console.log(req.body);
   res.send({
-    code: 200,
-    msg: "OK",
-    data: urls, //返回data给前端预览
+    ok: true,
+    msg: "发布成功",
+    data: imgs, //返回data给前端预览
   });
 });
 
