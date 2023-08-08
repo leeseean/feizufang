@@ -14,73 +14,6 @@ model user {
   balance  Float   @default(0) @db.Float
 }
 
-/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
-model rents {
-  id                String?   @db.VarChar(45)
-  agent_id          String?   @db.VarChar(45)
-  publish_type      String?   @db.VarChar(45)
-  uid               String?   @db.VarChar(45)
-  username          String?   @db.VarChar(45)
-  name              String?   @db.VarChar(45)
-  mobile            String?   @db.VarChar(45)
-  class             String?   @db.VarChar(45)
-  vice_class        String?   @db.VarChar(45)
-  title             String?   @db.VarChar(255)
-  small_area        String?   @db.VarChar(45)
-  province          String?   @db.VarChar(45)
-  city              String?   @db.VarChar(255)
-  dist              String?   @db.VarChar(255)
-  community         String?   @db.VarChar(255)
-  lat               String?   @db.VarChar(45)
-  lng               String?   @db.VarChar(45)
-  price             Int?
-  square            String?   @db.VarChar(45)
-  video_url         String?   @db.VarChar(255)
-  vr_url            String?   @db.VarChar(255)
-  floor             String?   @db.VarChar(45)
-  count_floor       String?   @db.VarChar(45)
-  room              String?   @db.VarChar(45)
-  office            String?   @db.VarChar(45)
-  guard             String?   @db.VarChar(45)
-  deposit           String?   @db.VarChar(45)
-  house_type        String?   @db.VarChar(5)
-  decoration_type   String?   @db.VarChar(5)
-  years             String?   @db.VarChar(45)
-  orientation       String?   @db.VarChar(5)
-  property_right    String?   @db.VarChar(45)
-  management_type   String?   @db.VarChar(45)
-  shops_type        String?   @db.VarChar(45)
-  configure         String?   @db.VarChar(45)
-  tag               String?   @db.VarChar(45)
-  content           String?   @db.LongText
-  param             Json?
-  display           String?   @db.VarChar(45)
-  hot               String?   @db.VarChar(45)
-  payment_state     String?   @db.VarChar(45)
-  deal              String?   @db.VarChar(45)
-  click             String?   @db.VarChar(45)
-  dateline          DateTime? @db.Date
-  edit_dateline     String?   @db.VarChar(45)
-  updateline        DateTime? @db.Date
-  topdateline       String?   @db.VarChar(45)
-  is_free           String?   @db.VarChar(45)
-  o_tilte           String?   @db.VarChar(255)
-  o_content         String?   @db.LongText
-  ftitle            String?   @db.VarChar(45)
-  huxing            String?   @db.VarChar(45)
-  province_text     String?   @db.VarChar(45)
-  display_text      String?   @db.VarChar(45)
-  overdue_text      String?   @db.VarChar(45)
-  see_updateline    String?   @db.VarChar(45)
-  publish_type_text String?   @db.VarChar(45)
-  return_top        Int?
-  vice_class_text   String?   @db.VarChar(45)
-  price_text        String?   @db.VarChar(45)
-  refresh           Int?
-  top               Int?
-  key               Int       @id @default(autoincrement())
-}
-
 model rentlist {
   id              Int       @id
   tel             String?   @db.VarChar(45)
@@ -88,7 +21,7 @@ model rentlist {
   zfj             String?   @db.VarChar(45)
   title           String?   @db.VarChar(255)
   content         String?   @db.LongText
-  price           String?   @db.VarChar(45)
+  price           Int?
   price_text      String?   @db.VarChar(45)
   priceNegotiable String?   @db.VarChar(45)
   publish_type    String?   @db.VarChar(45)

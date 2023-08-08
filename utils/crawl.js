@@ -208,7 +208,7 @@ async function query(pageIndex) {
                 city: data.city,
                 community: data.community,
                 priceNegotiable: data.price === "面议" ? "1" : "0",
-                price: data.price === "面议" ? null : data.price,
+                price: data.price === "面议" ? null : +data.price,
                 square: data.square,
                 floor: data.floor,
                 count_floor: data.count_floor,

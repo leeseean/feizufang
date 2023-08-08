@@ -66,7 +66,7 @@
             <ul class="list-group col">
                 <li @click="selectCurHouseType(item)"
                     class="list-group-item border-0 cursor-pointer"
-                    :class="{'list-group-item-success': houseTypeValue === item.value}"
+                    :class="{'list-group-item-success': room === item.value}"
                     v-for="(item, index) in globalData.houseTypes" :key="item.value">
                     {{item.label}}
                 </li>
@@ -109,7 +109,7 @@
                 curCity: '1.1',
                 rentMoneyValue: "",
                 rentTypeValue: '',
-                houseTypeValue: '',
+                room: '',
                 showNavConfig: {},
                 filterConfig: {}
             };
@@ -147,7 +147,7 @@
                 this.query('vice_class');
             },
             selectCurHouseType(item) {
-                this.houseTypeValue = item.value;
+                this.room = item.value;
                 this.query('room');
             },
             selectCurFilter(config) {
@@ -190,7 +190,7 @@
                             if (this.filterConfig[key].length === 0) {
                                 delete q[key];
                             } else {
-                                q[key] = this.filterConfig[key].sort().join(',');
+                                q[key] = this.filterConfig[key].map(v => +v).sort().join(',');
                             }
                         } else {
                             if (!this.filterConfig[key]) {

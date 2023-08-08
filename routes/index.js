@@ -71,22 +71,27 @@ router.get("/", async function (req, res, next) {
   if (facingFilter) {
     param.where.orientation = facingFilter;
   }
+  console.log(furnishFilter, tagFilter);
+
   let rentList = await prisma.rentlist.findMany(param);
   const ids = rentList.map((item) => item.id).join(",");
-  if (furnishFilter && tagFilter) {
-    const raw = String.raw`SELECT * FROM feizufang.rents WHERE id IN (${ids}) AND FIND_IN_SET(${furnishFilter}, configure) AND FIND_IN_SET(${tagFilter}, tag);`;
-    rentList = await prisma.$queryRawUnsafe(raw);
-  } else {
-    if (furnishFilter) {
-      const raw = `SELECT * FROM feizufang.rents WHERE id IN (${ids}) AND FIND_IN_SET(${furnishFilter}, configure);`;
+  if (ids) {
+    if (furnishFilter && tagFilter) {
+      const raw = String.raw`SELECT * FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${furnishFilter}', configure) AND FIND_IN_SET('${tagFilter}', tag);`;
+      console.log(raw);
       rentList = await prisma.$queryRawUnsafe(raw);
-    }
-    if (tagFilter) {
-      const raw = `SELECT * FROM feizufang.rents WHERE id IN (${ids}) AND FIND_IN_SET(${tagFilter}, tag);`;
-      rentList = await prisma.$queryRawUnsafe(raw);
+    } else {
+      if (furnishFilter) {
+        const raw = `SELECT * FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${furnishFilter}', configure);`;
+        rentList = await prisma.$queryRawUnsafe(raw);
+      }
+      if (tagFilter) {
+        const raw = `SELECT * FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${tagFilter}', tag);`;
+        rentList = await prisma.$queryRawUnsafe(raw);
+      }
     }
   }
-  console.log(rentList);
+  // console.log(rentList);
   res.render("index", { rentList, dressFilterList, publishTypeList, tagList });
 });
 

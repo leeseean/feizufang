@@ -12,12 +12,11 @@ const {
 
 router.get("/:id", async (req, res) => {
   const { id } = req.params;
-  const detail = await prisma.rents.findFirst({
+  const detail = await prisma.rentlist.findFirst({
     where: {
-      id,
+      id: Number(id),
     },
   });
-  console.log(detail);
   res.render("detail", {
     detail,
     orientationFilterList,
