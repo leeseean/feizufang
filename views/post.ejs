@@ -81,7 +81,7 @@
                     <option value="2">中介</option>
                 </select>
                 <div v-if="!publish_type && showErrFlag" class="invalid-tooltip d-block">
-                    请填写来源
+                    请选择来源
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputWx">手机号</label>
-            <div class="col-9">
+            <div class="col-9 position-relative">
                 <input v-model="tel" type="number" class="form-control" placeholder="9396932154" id="inputWx"/>
                 <div v-if="!tel && showErrFlag" class="invalid-tooltip d-block">
                     请填写手机号
@@ -207,11 +207,27 @@
             <button @click="postForm" class="btn btn-primary w-50 m-auto rounded-5">确认发布</button>
         </div>
     </div>
+    <div class="toast-container position-fixed start-50 translate-middle-x" style="top: 50px">
+        <div id="toast" class="toast align-items-center border-0"
+             :class="{'text-bg-success': fetchOK, 'text-bg-danger': !fetchOK}" role="alert" aria-live="assertive"
+             aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body text-center">
+                    {{tipMsg}}
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     Vue.createApp({
         data() {
             return {
+                toast: null,
+                tipMsg: '',
+                fetchOK: false,
                 globalData,
                 files: [],
                 imgUrls: [],
@@ -248,6 +264,7 @@
 
         },
         mounted() {
+            this.toast = new bootstrap.Toast(document.querySelector('#toast'));
             this.trigger1 = this.initMobileSelect('#trigger1', '出租类型', [
                 {
                     data: [
@@ -544,6 +561,7 @@
                 formData.append('zfj', this.zfj);
                 formData.append('title', this.title);
                 formData.append('content', this.content);
+                formData.append('square', this.square);
                 formData.append('price', this.price);
                 formData.append('price_text', this.price_text);
                 formData.append('priceNegotiable', this.priceNegotiable ? '1' : '0');
@@ -562,10 +580,18 @@
                 formData.append('vice_class', this.trigger1.getValue()[0].id);
                 formData.append('configure', this.furnishFilter.join(','));
                 formData.append('tag', this.tagFilter.join(','));
-                const response = await fetch('/post', {
+                const res = await fetch('/post', {
                     method: 'POST',
                     body: formData,
-                });
+                }).then(res => res.json());
+                this.tipMsg = res.msg;
+                this.fetchOK = res.ok;
+                this.toast.show();
+                if (res.ok) {
+                    setTimeout(() => {
+                        window.location.href = '/index';
+                    }, 1500);
+                }
             }
         }
     }).mount('#app');

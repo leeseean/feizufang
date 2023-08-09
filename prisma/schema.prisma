@@ -15,7 +15,7 @@ model user {
 }
 
 model rentlist {
-  id              Int       @id
+  id              Int       @id @default(autoincrement())
   tel             String?   @db.VarChar(45)
   wx              String?   @db.VarChar(45)
   zfj             String?   @db.VarChar(45)

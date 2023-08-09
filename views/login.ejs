@@ -113,7 +113,9 @@
                 this.fetchOK = res.ok;
                 new bootstrap.Toast(document.querySelector('#toast')).show();
                 if (res.ok) {
-                    window.location.href = '/index';
+                    setTimeout(() => {
+                        window.location.href = '/index';
+                    }, 1500);
                 }
             }
         }

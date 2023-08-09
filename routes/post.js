@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const multer = require("multer"); // 处理文件上传的中间件
 const prisma = require("../prisma/prisma");
+const { DateTime } = require("luxon");
 router.get("/", async (req, res) => {
   res.render("post");
 });
@@ -32,21 +33,37 @@ const upload = multer({
   }),
 });
 
-router.post("/", upload.any(), async (req, res) => {
+router.post("/", upload.any(), (req, res) => {
   const files = req.files; //将获取的文件放到files
   const imgs = []; //定义一个空数组
   for (let file of files) {
     //将改完的文件写进空数组
     imgs.push(file.publicPath + "/" + file.filename);
   }
-  console.log(req.body);
   // 写入数据库
-
-  res.send({
-    ok: true,
-    msg: "发布成功",
-    data: imgs, //返回data给前端预览
-  });
+  prisma.rentlist
+    .create({
+      data: {
+        ...req.body,
+        price: Number(req.body.price),
+        imgs,
+        username: req.session.user.username,
+        dateline: DateTime.local().toISO(),
+        updateline: DateTime.local().toISO(),
+      },
+    })
+    .then(() => {
+      res.send({
+        ok: true,
+        msg: "发布成功",
+      });
+    })
+    .catch((e) => {
+      res.send({
+        ok: false,
+        msg: "发布失败",
+      });
+    });
 });
 
 module.exports = router;
