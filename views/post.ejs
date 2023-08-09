@@ -473,6 +473,12 @@
             });
         },
         methods: {
+            goBack() {
+                window.location.href = document.referrer;
+            },
+            goHome() {
+                window.location.href = '/index';
+            },
             initMobileSelect(el, title, wheelsData, transitionEnd, callback) {
                 return new MobileSelect({
                     trigger: el,

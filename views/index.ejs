@@ -2,6 +2,30 @@
 <%- include("./share/head.ejs") %>
 <body>
 <div class="container" id="app">
+    <div class="search-panel row pt-2 pb-2 border-bottom">
+        <div class="input-group align-items-center">
+            <select v-model="searchType" class="form-select fs-7" aria-label="菲律宾租房">
+                <option value="title">标题</option>
+                <option value="content">内容</option>
+                <option value="username">发布人</option>
+            </select>
+            <input v-if="searchType === 'title'" v-model="searchTitleText" type="text" class="form-control fs-7"
+                   placeholder="有阳台" style="width: 40%"
+                   aria-label="菲律宾租房"/>
+            <input v-if="searchType === 'content'" v-model="searchContentText" type="text" class="form-control fs-7"
+                   placeholder="有阳台" style="width: 40%"
+                   aria-label="菲律宾租房"/>
+            <input v-if="searchType === 'username'" v-model="searchUsernameText" type="text" class="form-control fs-7"
+                   placeholder="有阳台" style="width: 40%"
+                   aria-label="菲律宾租房"/>
+            <select v-model="publish_type" class="form-select fs-7" aria-label="菲律宾租房">
+                <option value="">全部</option>
+                <option value="1">个人</option>
+                <option value="2">中介</option>
+            </select>
+            <div @click="search" class="icofont-search-2 ms-2 pt-2 pb-2 text-center" style="width: 32px"></div>
+        </div>
+    </div>
     <div class="select-panel row p-2 position-relative border-bottom">
         <div class="col position-relative cursor-pointer">
             <span class="d-flex align-items-center" @click="toggleNavShow(0)">位置<em class="triangeld"
@@ -97,6 +121,29 @@
         </div>
     </div>
     <%- include('./share/list'); %>
+    <nav class="mt-2" aria-label="菲律宾租房">
+        <ul class="pagination justify-content-center align-items-center">
+            <li @click="goPage(pageNumber - 1)" class="page-item" :class="{disabled: pageNumber === 1}">
+                <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li v-if="pageNumber-1" @click="goPage(pageNumber-1)" class="page-item"><a class="page-link"
+                                                                                       href="javascript:void(0)">{{pageNumber-1}}</a>
+            </li>
+            <li @click="goPage(pageNumber)" class="page-item active"><a class="page-link" href="javascript:void(0)">{{pageNumber}}</a>
+            </li>
+            <li v-if="pageNumber + 1 <= <%= totalPages %>" @click="goPage(pageNumber + 1)" class="page-item"><a
+                        class="page-link" href="javascript:void(0)">{{pageNumber+1}}</a>
+            </li>
+            <li @click="goPage(pageNumber + 1)" class="page-item" :class="{disabled: pageNumber === <%= totalPages %>}">
+                <a class="page-link" href="javascript:void(0);" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+            <div class="ms-2">共<span class="text-success ms-1 me-1"><%= totalPages %></span>页</div>
+        </ul>
+    </nav>
     <img @click="goPost" class="position-fixed img-fluid" style="width: 60px;bottom: 60px; right: 20px;"
          src="/images/add.png"/>
 </div>
@@ -105,13 +152,19 @@
         data() {
             return {
                 globalData,
+                pageNumber: Number("<%= pageNumber %>"),
                 curProvince: '0',
                 curCity: '1.1',
                 rentMoneyValue: "",
                 rentTypeValue: '',
                 room: '',
                 showNavConfig: {},
-                filterConfig: {}
+                filterConfig: {},
+                publish_type: '',
+                searchType: 'title',
+                searchTitleText: '',
+                searchContentText: '',
+                searchUsernameText: '',
             };
         },
         created() {
@@ -122,6 +175,10 @@
             }
         },
         methods: {
+            goPage(num) {
+                this.pageNumber = num;
+                this.query('page');
+            },
             goPost() {
                 window.location.href = '/post';
             },
@@ -132,7 +189,6 @@
                     }
                 }
                 this.showNavConfig[v] = !this.showNavConfig[v];
-                console.log(this.showNavConfig[v]);
             },
             selectCurCity(item) {
                 this.curCity = item.value;
@@ -151,11 +207,42 @@
                 this.query('room');
             },
             selectCurFilter(config) {
-                console.log(config);
                 this.query('config');
+            },
+            search() {
+                this.query('search');
             },
             query(type) {
                 const q = Qs.parse(location.search.slice(1));
+                if (type === 'page') {
+                    if (!this.pageNumber) {
+                        delete q.pageNumber;
+                    } else {
+                        q.pageNumber = this.pageNumber;
+                    }
+                }
+                if (type === 'search') {
+                    if (!this.searchTitleText) {
+                        delete q.title;
+                    } else {
+                        q.title = this.searchTitleText;
+                    }
+                    if (!this.searchContentText) {
+                        delete q.content;
+                    } else {
+                        q.content = this.searchContentText;
+                    }
+                    if (!this.searchUsernameText) {
+                        delete q.username;
+                    } else {
+                        q.username = this.searchUsernameText;
+                    }
+                    if (!this.publish_type) {
+                        delete q.publish_type;
+                    } else {
+                        q.publish_type = this.publish_type;
+                    }
+                }
                 if (type === "city") {
                     if (!this.curCity) {
                         delete q.city;

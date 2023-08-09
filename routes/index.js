@@ -12,6 +12,10 @@ router.get("/", async function (req, res, next) {
   const {
     pageNumber = 1,
     pageSize = 10,
+    username,
+    publish_type,
+    title,
+    content,
     city,
     price,
     vice_class,
@@ -23,7 +27,7 @@ router.get("/", async function (req, res, next) {
     furnishFilter,
     tagFilter,
   } = req.query;
-  const skip = (pageNumber - 1) * pageSize;
+  const skip = (Number(pageNumber) - 1) * pageSize;
   const take = pageSize;
   let orderBy = {
     updateline: "desc",
@@ -44,6 +48,22 @@ router.get("/", async function (req, res, next) {
     orderBy,
     where: {},
   };
+  if (username) {
+    param.where.username = username;
+  }
+  if (publish_type) {
+    param.where.publish_type = publish_type;
+  }
+  if (title) {
+    param.where.title = {
+      contains: title,
+    };
+  }
+  if (content) {
+    param.where.content = {
+      contains: content,
+    };
+  }
   if (city) {
     param.where.city = city;
   }
@@ -71,7 +91,6 @@ router.get("/", async function (req, res, next) {
   if (facingFilter) {
     param.where.orientation = facingFilter;
   }
-  console.log(furnishFilter, tagFilter);
 
   let rentList = await prisma.rentlist.findMany(param);
   const ids = rentList.map((item) => item.id).join(",");
@@ -91,8 +110,15 @@ router.get("/", async function (req, res, next) {
       }
     }
   }
-  // console.log(rentList);
-  res.render("index", { rentList, dressFilterList, publishTypeList, tagList });
+  const totalRecords = await prisma.rentlist.count();
+  res.render("index", {
+    rentList,
+    dressFilterList,
+    publishTypeList,
+    tagList,
+    totalPages: Math.ceil(totalRecords / pageSize),
+    pageNumber,
+  });
 });
 
 module.exports = router;

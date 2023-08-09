@@ -39,8 +39,9 @@ router.post("/", upload.any(), async (req, res) => {
     //将改完的文件写进空数组
     imgs.push(file.publicPath + "/" + file.filename);
   }
-
   console.log(req.body);
+  // 写入数据库
+
   res.send({
     ok: true,
     msg: "发布成功",
