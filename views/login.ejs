@@ -1,0 +1,123 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.prod.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div style="width: 340px; padding-top: 105px;" class="position-relative top-0 start-50 translate-middle-x">
+        <div class="mb-3 text-center fs-4">菲租房，欢迎回来！</div>
+        <form id="form" class="row needs-validation bg-info-subtle p-4 border rounded-2"
+              :class="{'was-validated': !isValid}" novalidate>
+            <div class="input-group mb-3">
+                <span class="input-group-text">账号</span>
+                <input v-model="form.username" type="text" class="form-control" pattern="^[a-zA-Z0-9_]{3,20}$"
+                       placeholder="账号" aria-label="账号" required/>
+                <div class="invalid-feedback">
+                    3-20位英文字母、数字、下划线组成
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">密码</span>
+                <input v-model="form.password" type="password" class="form-control"
+                       pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{6,20}$" placeholder="密码" aria-label="密码"
+                       required/>
+                <div class="invalid-feedback">
+                    6-20位英文字母及数字组成
+                </div>
+            </div>
+            <div class="input-group">
+                <button v-if="showLoginFlag" @click="submit('login')" type="button"
+                        class="btn btn-success m-auto w-100">
+                    登录
+                </button>
+                <button v-if="!showLoginFlag" @click="submit('register')" type="button"
+                        class="btn btn-success m-auto w-100">注册
+                </button>
+            </div>
+        </form>
+        <div v-if="showLoginFlag" class="row  p-3 border rounded-2" @click="showLoginFlag = false"><span
+                    class="text-center">没有账号？<span
+                        class="text-success">注册一个</span></span></div>
+        <div v-if="!showLoginFlag" class="row  p-3 border rounded-2" @click="showLoginFlag = true"><span
+                    class="text-center">已有账号？<span
+                        class="text-success">点击登录</span></span></div>
+    </div>
+    <div class="toast-container start-50 translate-middle-x" style="top: 50px">
+        <div id="toast" class="toast align-items-center border-0"
+             :class="{'text-bg-success': fetchOK, 'text-bg-danger': !fetchOK}" role="alert" aria-live="assertive"
+             aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body text-center">
+                    {{tipMsg}}
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    /*form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+    }, false)*/
+    Vue.createApp({
+        data() {
+            return {
+                showLoginFlag: true,
+                isValid: true,
+                form: {
+                    username: '',
+                    password: ''
+                },
+                tipMsg: '',
+                fetchOK: false
+            };
+        },
+        methods: {
+            async submit(v) {
+                this.isValid = document.querySelector('#form').checkValidity();
+                if (!this.isValid) {
+                    return;
+                }
+                let res;
+                if (v === 'login') {
+                    res = await fetch('/user/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(this.form)
+                    }).then(res => res.json());
+                }
+                if (v === 'register') {
+                    res = await fetch('/user/register', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(this.form)
+                    }).then(res => res.json());
+                }
+                this.tipMsg = res.msg;
+                this.fetchOK = res.ok;
+                new bootstrap.Toast(document.querySelector('#toast')).show();
+                if (res.ok) {
+                    window.location.href = '/index';
+                }
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

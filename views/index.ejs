@@ -144,8 +144,17 @@
             <div class="ms-2">共<span class="text-success ms-1 me-1"><%= totalPages %></span>页</div>
         </ul>
     </nav>
-    <img @click="goPost" class="position-fixed img-fluid" style="width: 60px;bottom: 60px; right: 20px;"
-         src="/images/add.png"/>
+    <% if (user) { %>
+        <img @click="goPost" class="position-fixed img-fluid" style="width: 50px;bottom: 60px; right: 20px;"
+             src="/images/add.png"/>
+    <% } else { %>
+        <img @click="goLogin" class="position-fixed img-fluid" style="width: 50px;bottom: 60px; right: 20px;"
+             src="/images/add.png"/>
+        <!--<div @click="goLogin" class="position-fixed bg-primary text-light fs-6 rounded-circle text-center"
+             style="width: 50px; height: 50px;line-height: 50px;bottom: 60px; right: 20px;"
+        >登录
+        </div>-->
+    <% } %>
 </div>
 <script>
     Vue.createApp({
@@ -181,6 +190,9 @@
             },
             goPost() {
                 window.location.href = '/post';
+            },
+            goLogin() {
+                window.location.href = '/user/login';
             },
             toggleNavShow(v) {
                 for (const key in this.showNavConfig) {

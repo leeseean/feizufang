@@ -6,6 +6,9 @@ const {
   validateUsername,
   validatePassword,
 } = require("../utils/validator");
+router.get("/login", (req, res) => {
+  res.render("login");
+});
 // 登录路由
 router.post("/login", async (req, res) => {
   const { username, password } = req.body;
@@ -52,19 +55,20 @@ router.post("/logout", (req, res) => {
   res.send({ ok: true, msg: "退出成功！" });
 });
 
-router.post("/register", (req, res) => {
+router.post("/register", async (req, res) => {
   // 在此处进行身份验证，检查用户名和密码是否正确
-  const { username, password, email } = req.body;
-  if (
-    !(
-      validateUsername(username) &&
-      validatePassword(password) &&
-      validateEmail(email)
-    )
-  ) {
+  const { username, password } = req.body;
+  if (!(validateUsername(username) && validatePassword(password))) {
     return res.send({
       ok: false,
       msg: "请检查输入格式",
+    });
+  }
+  const count = await prisma.user.count({ where: { username } });
+  if (count > 0) {
+    return res.send({
+      ok: false,
+      msg: "用户名已存在",
     });
   }
   prisma.user
@@ -92,6 +96,7 @@ router.post("/register", (req, res) => {
       }
     })
     .catch((err) => {
+      console.dir(err);
       res.send({
         ok: false,
         msg: JSON.stringify(err),
