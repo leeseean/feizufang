@@ -93,24 +93,33 @@ router.get("/", async function (req, res, next) {
   }
 
   let rentList = await prisma.rentlist.findMany(param);
+  const param2 = { ...param };
+  delete param2.skip;
+  delete param2.take;
+  let totalRecords = await prisma.rentlist.count(param2);
   const ids = rentList.map((item) => item.id).join(",");
   if (ids) {
     if (furnishFilter && tagFilter) {
       const raw = String.raw`SELECT * FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${furnishFilter}', configure) AND FIND_IN_SET('${tagFilter}', tag);`;
-      console.log(raw);
       rentList = await prisma.$queryRawUnsafe(raw);
+      const raw2 = String.raw`SELECT COUNT(*) FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${furnishFilter}', configure) AND FIND_IN_SET('${tagFilter}', tag);`;
+      totalRecords = await prisma.$queryRawUnsafe(raw2);
     } else {
       if (furnishFilter) {
         const raw = `SELECT * FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${furnishFilter}', configure);`;
         rentList = await prisma.$queryRawUnsafe(raw);
+        const raw2 = `SELECT COUNT(*) FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${furnishFilter}', configure);`;
+        totalRecords = await prisma.$queryRawUnsafe(raw2);
       }
       if (tagFilter) {
         const raw = `SELECT * FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${tagFilter}', tag);`;
         rentList = await prisma.$queryRawUnsafe(raw);
+        const raw2 = `SELECT * FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${tagFilter}', tag);`;
+        totalRecords = await prisma.$queryRawUnsafe(raw2);
       }
     }
   }
-  const totalRecords = await prisma.rentlist.count();
+
   res.render("index", {
     rentList,
     dressFilterList,

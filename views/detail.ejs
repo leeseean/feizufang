@@ -117,7 +117,16 @@
     </div>
     <div class="p-2 border-bottom" style="margin-bottom: 48px">
         <div v-html="'<%= detail.content; %>'"></div>
-        <div>telegram(纸飞机)：<%= detail.zfj %></div>
+        <% if (detail.zfj) { %>
+            <div>telegram：<%= detail.zfj %></div>
+        <% } %>
+        <% if (detail.wx) { %>
+            <div>微信：<%= detail.wx %></div>
+        <% } %>
+        <% if (detail.tel) { %>
+            <div>电话：<%= detail.tel %></div>
+        <% } %>
+
     </div>
     <!--<div class="fs-5 fw-bold border-bottom p-2">
         周边配套
@@ -132,12 +141,12 @@
             <div><i class="icofont-hotel-boy-alt text-warning fs-5"></i>
                 <span class="fs-7 ms-1 text-secondary"><%= detail.username; %></span></div>
             <div>
-                <span class="text-success fs-7 me-1" v-if="showCopyMsg">复制微信号成功</span>
+                <!--<span class="text-success fs-7 me-1" v-if="showCopyMsg">复制微信号成功</span>
                 <a class="btn btn-success me-1" href="javascript:void(0);" @click="goWechat">
                     <i class="icofont-wechat"></i> 微信
-                </a>
+                </a>-->
                 <a class="btn btn-primary" href="tel:63<%= detail.tel; %>">
-                    <i class="icofont-whatsapp"></i> 电话
+                    <i class="icofont-whatsapp"></i> 打电话
                 </a>
             </div>
         </div>
@@ -201,7 +210,7 @@
                     });
             },
             goBack() {
-                window.location.href = document.referrer;
+                window.location.href = document.referrer || '/index';
             },
             goHome() {
                 window.location.href = '/index';

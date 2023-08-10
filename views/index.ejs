@@ -183,6 +183,26 @@
                 }
             }
         },
+        mounted() {
+            const q = Qs.parse(location.search.slice(1));
+            this.pageNumber = Number(q.pageNumber) || 1;
+            this.searchTitleText = q.title || '';
+            this.searchContentText = q.content || '';
+            this.searchUsernameText = q.username || '';
+            this.publish_type = q.publish_type || '';
+            this.curCity = q.city || '';
+            this.rentMoneyValue = q.price || '';
+            this.rentTypeValue = q.vice_class || '';
+            this.room = q.room || '';
+            this.filterConfig = {
+                timeFilter: q.timeFilter || '',
+                roomFilter: q.roomFilter || '',
+                dressFilter: q.dressFilter || '',
+                facingFilter: q.facingFilter || '',
+                furnishFilter: q.furnishFilter ? q.furnishFilter.split(',') : [],
+                tagFilter: q.tagFilter ? q.tagFilter.split(',') : [],
+            };
+        },
         methods: {
             goPage(num) {
                 this.pageNumber = num;
