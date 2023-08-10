@@ -10,8 +10,8 @@
         </div>
     </div>
     <div id="canvas-view" style="margin-top: 48px;">
-        <div class="position-relative">
-            <div id="carousel" class="carousel slide" style="height: 260px;">
+        <div class="position-relative carousel-wrapper">
+            <div id="carousel" class="carousel slide" style="height: 280px;">
                 <div class="carousel-indicators">
                     <% for (const index in detail.imgs) { %>
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="<%= index; %>" class="active"
@@ -19,9 +19,9 @@
                     <% } %>
                 </div>
                 <div class="carousel-inner">
-                    <% for (const item of detail.imgs) { %>
-                        <div class="carousel-item">
-                            <img src="<%= item; %>" class="d-block w-100"
+                    <% for (const imgIndex in detail.imgs) { %>
+                        <div class="carousel-item <%= +imgIndex === 0 ? 'active' : '' %>">
+                            <img src="<%= detail.imgs[imgIndex]; %>" class="d-block w-100 h-100"
                                  alt="菲律宾租房，马尼拉租房，玛卡提租房"/>
                         </div>
                     <% } %>
@@ -36,13 +36,13 @@
                 </button>
             </div>
         </div>
-        <div class="p-2 row border-bottom">
+        <div class=" p-2 row border-bottom">
             <div class="col-11 fs-5 text-black fw-bold"><%= detail.title; %></div>
             <div class="col-1 d-flex align-items-center ps-0" @click="share">
                 <i class="icofont-share text-success fs-5 cursor-pointer"></i>
             </div>
         </div>
-        <div v-show="showQrcode" class="p-2 row">
+        <div v-show="showQrcode" class=" p-2 row">
             <div id="qrcode" class="col-4" style=" height:96px;"></div>
             <div class="col-8 d-flex align-items-center ">
                 <p>长按识别二维码，了解更多
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="p-2 pb-0">
+    <div class=" p-2 pb-0">
         <% if (detail.tag) { %>
             <div class="row g-2 text-center mb-2">
                 <% for (const tag of detail.tag.split(',')) { %>
@@ -99,10 +99,10 @@
         </div>
     </div>
     <% if (detail.configure) { %>
-        <div class="fs-5 fw-bold border-bottom p-2">
+        <div class=" fs-5 fw-bold border-bottom p-2">
             房屋配置
         </div>
-        <div class="p-2 border-bottom">
+        <div class=" p-2 border-bottom">
             <div class="row g-2">
                 <% for (const conf of detail.configure.split(',')) { %>
                     <% var furnishObj = furnishList.find(v => v.value === conf) || {}; %>
@@ -112,10 +112,10 @@
             </div>
         </div>
     <% } %>
-    <div class="fs-5 fw-bold border-bottom p-2">
+    <div class=" fs-5 fw-bold border-bottom p-2">
         房源描述
     </div>
-    <div class="p-2 border-bottom" style="margin-bottom: 48px">
+    <div class=" p-2 border-bottom" style="margin-bottom: 48px">
         <div v-html="'<%= detail.content; %>'"></div>
         <% if (detail.zfj) { %>
             <div>telegram：<%= detail.zfj %></div>
