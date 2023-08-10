@@ -129,17 +129,5 @@ router.get("/", async function (req, res, next) {
     pageNumber,
   });
 });
-router.get("/imgs", async (req, res) => {
-  const rentlist = await prisma.rentlist.findMany();
-  rentlist.forEach((item) => {
-    prisma.rentlist
-      .update({
-        where: { id: item.id },
-        data: {
-          imgs: item.imgs.map((v) => "/upload/rents/" + v.split("/").pop()),
-        },
-      })
-      .catch((e) => console.log(e));
-  });
-});
+
 module.exports = router;
