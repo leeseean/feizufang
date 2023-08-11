@@ -204,7 +204,9 @@
             </div>
         </div>
         <div class="row mt-5">
-            <button @click="postForm" class="btn btn-primary w-50 m-auto rounded-5">确认发布</button>
+            <button @click="postForm" class="btn btn-primary w-50 m-auto rounded-5" :class="{disabled: fetching}">
+                <span v-if="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                确认发布</button>
         </div>
     </div>
     <div class="toast-container position-fixed start-50 translate-middle-x" style="top: 50px">
@@ -225,6 +227,7 @@
     Vue.createApp({
         data() {
             return {
+                fetching: false,
                 toast: null,
                 tipMsg: '',
                 fetchOK: false,
@@ -580,10 +583,13 @@
                 formData.append('vice_class', this.trigger1.getValue()[0].id);
                 formData.append('configure', this.furnishFilter.join(','));
                 formData.append('tag', this.tagFilter.join(','));
+                this.fetching = true
                 const res = await fetch('/post', {
                     method: 'POST',
                     body: formData,
-                }).then(res => res.json());
+                }).then(res => res.json()).finally(()=>{
+                    this.fetching = false
+                });
                 this.tipMsg = res.msg;
                 this.fetchOK = res.ok;
                 this.toast.show();

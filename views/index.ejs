@@ -28,7 +28,7 @@
     </div>
     <div class="select-panel row p-2 position-relative border-bottom">
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex align-items-center justify-content-center" @click="toggleNavShow(0)">位置<em class="triangeld"
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(0)">位置<em class="triangeld"
                                                                                       :class="{active: showNavConfig[0]}"></em></span>
         </div>
         <div class="click-show-part bg-light row position-absolute w-100 top-100 z-3"
@@ -52,7 +52,7 @@
             </ul>
         </div>
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex align-items-center justify-content-center" @click="toggleNavShow(1)">租金<em class="triangeld"
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(1)">租金<em class="triangeld"
                                                                                       :class="{active: showNavConfig[1]}"></em></span>
         </div>
         <div class="click-show-part bg-light position-absolute start-0 top-100 z-3"
@@ -67,7 +67,7 @@
             </ul>
         </div>
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex align-items-center justify-content-center" @click="toggleNavShow(2)">类型<em class="triangeld"
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(2)">类型<em class="triangeld"
                                                                                       :class="{active: showNavConfig[2]}"></em></span>
         </div>
         <div class="click-show-part bg-light position-absolute start-0 top-100 z-3"
@@ -82,7 +82,7 @@
             </ul>
         </div>
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex align-items-center justify-content-center" @click="toggleNavShow(3)">户型<em class="triangeld"
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(3)">户型<em class="triangeld"
                                                                                       :class="{active: showNavConfig[3]}"></em></span>
         </div>
         <div class="click-show-part bg-light position-absolute start-0 top-100 z-3"
@@ -97,7 +97,7 @@
             </ul>
         </div>
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex align-items-center justify-content-center" @click="toggleNavShow(4)">筛选<em class="triangeld"
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(4)">筛选<em class="triangeld"
                                                                                       :class="{active: showNavConfig[4]}"></em></span>
         </div>
         <div class="click-show-part bg-light position-absolute start-0 top-100 p-3 z-3"
@@ -145,10 +145,10 @@
         </ul>
     </nav>
     <% if (user) { %>
-        <img @click="goPost" class="position-fixed img-fluid" style="width: 50px;bottom: 60px; right: 20px;"
+        <img @click="goPost" class="position-fixed img-fluid" style="width: 50px;bottom: 40px; right: 20px;"
              src="/images/add.png"/>
     <% } else { %>
-        <img @click="goLogin" class="position-fixed img-fluid" style="width: 50px;bottom: 60px; right: 20px;"
+        <img @click="goLogin" class="position-fixed img-fluid" style="width: 50px;bottom: 40px; right: 20px;"
              src="/images/add.png"/>
         <!--<div @click="goLogin" class="position-fixed bg-primary text-light fs-6 rounded-circle text-center"
              style="width: 50px; height: 50px;line-height: 50px;bottom: 60px; right: 20px;"
