@@ -14,7 +14,7 @@
             <div id="carousel" class="carousel slide" style="height: 280px;">
                 <div class="carousel-indicators">
                     <% for (const index in detail.imgs) { %>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="<%= index; %>" class="active"
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="<%= index; %>" class="<%= +index === 0 ? 'active' : '' %>"
                                 aria-current="true" aria-label="Slide <%= index + 1; %>"></button>
                     <% } %>
                 </div>
