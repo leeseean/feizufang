@@ -28,8 +28,9 @@
     </div>
     <div class="select-panel row p-2 position-relative border-bottom">
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(0)">位置<em class="triangeld"
-                                                                                      :class="{active: showNavConfig[0]}"></em></span>
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(0)">位置<em
+                        class="triangeld"
+                        :class="{active: showNavConfig[0]}"></em></span>
         </div>
         <div class="click-show-part bg-light row position-absolute w-100 top-100 z-3"
              :class="{'d-none': !showNavConfig[0]}">
@@ -52,8 +53,9 @@
             </ul>
         </div>
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(1)">租金<em class="triangeld"
-                                                                                      :class="{active: showNavConfig[1]}"></em></span>
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(1)">租金<em
+                        class="triangeld"
+                        :class="{active: showNavConfig[1]}"></em></span>
         </div>
         <div class="click-show-part bg-light position-absolute start-0 top-100 z-3"
              :class="{'d-none': !showNavConfig[1]}">
@@ -67,8 +69,9 @@
             </ul>
         </div>
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(2)">类型<em class="triangeld"
-                                                                                      :class="{active: showNavConfig[2]}"></em></span>
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(2)">类型<em
+                        class="triangeld"
+                        :class="{active: showNavConfig[2]}"></em></span>
         </div>
         <div class="click-show-part bg-light position-absolute start-0 top-100 z-3"
              :class="{'d-none': !showNavConfig[2]}">
@@ -82,8 +85,9 @@
             </ul>
         </div>
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(3)">户型<em class="triangeld"
-                                                                                      :class="{active: showNavConfig[3]}"></em></span>
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(3)">户型<em
+                        class="triangeld"
+                        :class="{active: showNavConfig[3]}"></em></span>
         </div>
         <div class="click-show-part bg-light position-absolute start-0 top-100 z-3"
              :class="{'d-none': !showNavConfig[3]}">
@@ -97,8 +101,9 @@
             </ul>
         </div>
         <div class="col position-relative cursor-pointer">
-            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(4)">筛选<em class="triangeld"
-                                                                                      :class="{active: showNavConfig[4]}"></em></span>
+            <span class="d-flex fs-7 align-items-center justify-content-center" @click="toggleNavShow(4)">筛选<em
+                        class="triangeld"
+                        :class="{active: showNavConfig[4]}"></em></span>
         </div>
         <div class="click-show-part bg-light position-absolute start-0 top-100 p-3 z-3"
              :class="{'d-none': !showNavConfig[4]}">
@@ -115,8 +120,8 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center pt-2">
-                <button class="btn btn-secondary w-25 me-3">重置</button>
-                <button class="btn btn-success w-25 ms-3" @click="selectCurFilter(filterConfig)">确定</button>
+                <button class="btn btn-secondary w-25 me-3" @click="resetCurFilter">重置</button>
+                <button class="btn btn-success w-25 ms-3" @click="selectCurFilter">确定</button>
             </div>
         </div>
     </div>
@@ -133,15 +138,16 @@
             </li>
             <li @click="goPage(pageNumber)" class="page-item active"><a class="page-link" href="javascript:void(0)">{{pageNumber}}</a>
             </li>
-            <li v-if="pageNumber + 1 <= <%= totalPages %>" @click="goPage(pageNumber + 1)" class="page-item"><a
+            <li v-if="pageNumber + 1 <= <%= totalPages; %>" @click="goPage(pageNumber + 1)" class="page-item"><a
                         class="page-link" href="javascript:void(0)">{{pageNumber+1}}</a>
             </li>
-            <li @click="goPage(pageNumber + 1)" class="page-item" :class="{disabled: pageNumber === <%= totalPages %>}">
+            <li @click="goPage(pageNumber + 1)" class="page-item"
+                :class="{disabled: pageNumber === <%= totalPages; %>}">
                 <a class="page-link" href="javascript:void(0);" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
             </li>
-            <div class="ms-2">共<span class="text-success ms-1 me-1"><%= totalPages %></span>页</div>
+            <div class="ms-2">共<span class="text-success ms-1 me-1"><%= totalPages; %></span>页</div>
         </ul>
     </nav>
     <% if (user) { %>
@@ -161,7 +167,7 @@
         data() {
             return {
                 globalData,
-                pageNumber: Number("<%= pageNumber %>"),
+                pageNumber: Number("<%= pageNumber; %>"),
                 curProvince: '0',
                 curCity: '1.1',
                 rentMoneyValue: "",
@@ -238,8 +244,18 @@
                 this.room = item.value;
                 this.query('room');
             },
-            selectCurFilter(config) {
+            selectCurFilter() {
                 this.query('config');
+            },
+            resetCurFilter() {
+                this.filterConfig = {
+                    timeFilter: '',
+                    roomFilter: '',
+                    dressFilter: '',
+                    facingFilter: '',
+                    furnishFilter: [],
+                    tagFilter: [],
+                };
             },
             search() {
                 this.query('search');
