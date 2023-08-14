@@ -121,6 +121,7 @@ router.get("/", async function (req, res, next) {
   }
 
   res.render("index", {
+    pageNav: "rent",
     rentList,
     dressFilterList,
     publishTypeList,
