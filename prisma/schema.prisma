@@ -46,3 +46,13 @@ model rentlist {
   topdateline     DateTime? @db.DateTime(0)
   square          String?   @db.VarChar(45)
 }
+
+model er_shou {
+  content  String? @db.LongText
+  id       Int     @id @default(autoincrement())
+  price    String? @db.VarChar(45)
+  quality  String? @db.VarChar(45)
+  way      String? @db.VarChar(45)
+  imgs     Json?
+  username String? @db.VarChar(45)
+}

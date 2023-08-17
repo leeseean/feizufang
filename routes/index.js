@@ -114,7 +114,7 @@ router.get("/", async function (req, res, next) {
       if (tagFilter) {
         const raw = `SELECT * FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${tagFilter}', tag);`;
         rentList = await prisma.$queryRawUnsafe(raw);
-        const raw2 = `SELECT * FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${tagFilter}', tag);`;
+        const raw2 = `SELECT COUNT(*) FROM feizufang.rentlist WHERE id IN (${ids}) AND FIND_IN_SET('${tagFilter}', tag);`;
         totalRecords = await prisma.$queryRawUnsafe(raw2);
       }
     }
