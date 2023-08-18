@@ -64,7 +64,7 @@ async function query(pageIndex) {
                 id: data.id,
                 imgs: data.imglist
                   ? data.imglist.map(
-                      (item) => "/" + item.split("/").slice(-1)[0],
+                      (item) => "/upload/erShou/" + item.split("/").pop(),
                     )
                   : [],
                 content: data.con,

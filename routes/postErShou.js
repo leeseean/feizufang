@@ -6,7 +6,7 @@ const multer = require("multer"); // 处理文件上传的中间件
 const prisma = require("../prisma/prisma");
 const { DateTime } = require("luxon");
 router.get("/", async (req, res) => {
-  res.render("post");
+  res.render("postErShou");
 });
 
 // 配置 multer 中间件，用于处理文件上传
@@ -17,13 +17,13 @@ const upload = multer({
         new Date().getMonth() + 1
       }-${new Date().getDate()}`;
       const directoryPath = path.join(
-        process.cwd() + "/public/upload/rents/" + date,
+        process.cwd() + "/public/upload/erShou/" + date,
       );
       if (!fs.existsSync(directoryPath)) {
         // 创建目录
         fs.mkdirSync(directoryPath);
       }
-      file.publicPath = "/upload/rents/" + date;
+      file.publicPath = "/upload/erShou/" + date;
       cb(null, directoryPath);
     },
     filename: function (req, file, cb) {
@@ -47,15 +47,13 @@ router.post("/", upload.any(), (req, res) => {
     imgs.push(file.publicPath + "/" + file.filename);
   }
   // 写入数据库
-  prisma.rentlist
+  prisma.er_shou
     .create({
       data: {
         ...req.body,
-        price: Number(req.body.price),
+        created_at: DateTime.local().toISO(),
         imgs,
         username: req.session.user.username,
-        dateline: DateTime.local().toISO(),
-        updateline: DateTime.local().toISO(),
       },
     })
     .then(() => {

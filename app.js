@@ -10,6 +10,7 @@ var detailRouter = require("./routes/detail");
 var postRouter = require("./routes/post");
 var userRouter = require("./routes/user");
 var rentsRouter = require("./routes/rents");
+var postErShouRouter = require("./routes/postErShou");
 var erShouRouter = require("./routes/erShou");
 var app = express();
 // view engine setup
@@ -40,6 +41,7 @@ app.use("/user", userRouter);
 app.use("/post", postRouter);
 app.use("/rents", rentsRouter);
 app.use("/erShou", erShouRouter);
+app.use("/postErShou", postErShouRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

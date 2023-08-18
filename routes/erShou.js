@@ -6,9 +6,16 @@ router.get("/", async (req, res) => {
   const { pageNumber = 1, pageSize = 8, searchText = "" } = req.query;
   const skip = (pageNumber - 1) * pageSize;
   const take = pageSize;
-  let param = {};
+  let param = {
+    orderBy: {
+      created_at: "desc",
+    },
+  };
   if (searchText) {
     param = {
+      orderBy: {
+        created_at: "desc",
+      },
       where: {
         content: {
           contains: searchText,
@@ -23,7 +30,6 @@ router.get("/", async (req, res) => {
     ...param,
   });
   const totalRecords = await prisma.er_shou.count(param);
-  console.log(totalRecords);
   res.render("erShou", {
     pageNav: "erShou",
     list,

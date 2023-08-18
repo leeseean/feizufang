@@ -20,13 +20,14 @@
             <i class="icofont-ui-home text-light fs-5" @click="goHome"></i>
         </div>
     </div>
-    <input @change="upload" type="file" multiple="multiple" id="input-file" name="input-file" class="position-absolute"
-           style="top: -200px"/>
+    <input @change="upload" type="file" multiple="multiple" accept="image/*" id="input-file" name="input-file"
+           class="position-absolute"
+           style="top: -200px" />
     <div class="p-2 d-flex justify-content-center" style="margin-top: 48px;">
         <div class="input-file border me-1 position-relative" v-for="(url, index) in imgUrls" :key="url">
-            <img class="img-thumbnail" :src="url"/>
+            <img class="w-100 h-100" :src="url" />
             <img @click="removeImg(index)" class="position-absolute top-0 end-0 input-file-close"
-                 src="/images/close.png"/>
+                 src="/images/close.png" />
         </div>
         <label for="input-file"
                class="fs-1 text-warning input-file d-flex align-items-center justify-content-center border-1 border">+</label>
@@ -89,7 +90,7 @@
             <label class="col-3 text-center col-form-label" for="inputMap">地址</label>
             <div class="col-9 position-relative">
                 <input v-model="community" type="text" class="form-control" placeholder="请填写google地图详细地址"
-                       id="inputMap"/>
+                       id="inputMap" />
                 <div v-if="!community && showErrFlag" class="invalid-tooltip d-block">
                     请填写地址
                 </div>
@@ -99,7 +100,7 @@
             <label class="col-3 text-center col-form-label" for="inputSquare">面积</label>
             <div class="col-9 position-relative d-flex justify-content-between align-items-center">
                 <input v-model="square" type="number" min="0" class="form-control" placeholder="请输入面积"
-                       id="inputSquare"/><span
+                       id="inputSquare" /><span
                         class="text-nowrap ms-2">平米</span>
                 <div v-if="!square && showErrFlag" class="invalid-tooltip d-block">
                     请填写面积
@@ -110,10 +111,10 @@
             <label class="col-3 text-center col-form-label" for="inputSquare">层数</label>
             <div class="col-9 position-relative d-flex justify-content-between align-items-center">
                 第 <input v-model="floor" type="number" min="0" class="form-control ms-2" placeholder="所在层"
-                          id="inputSquare"/><span
+                          id="inputSquare" /><span
                         class="text-nowrap ms-2">层，共</span><input v-model="count_floor" min="0" type="number"
                                                                     class="form-control ms-2" placeholder="总楼层"
-                                                                    id="inputSquare"/><span class="ms-2">层</span>
+                                                                    id="inputSquare" /><span class="ms-2">层</span>
                 <div v-if="!square && showErrFlag" class="invalid-tooltip d-block">
                     请填写层
                 </div>
@@ -124,7 +125,7 @@
             <div class="col-9 d-flex justify-content-between">
                 <input :disabled="priceNegotiable" v-model="price" type="number" class="form-control" style="width: 40%"
                        placeholder="请输入租金"
-                       id="inputPrice"/>
+                       id="inputPrice" />
                 <select :disabled="priceNegotiable" v-model="price_text" class="form-control w-auto  text-center">
                     <option>P/月</option>
                     <option>P/年</option>
@@ -141,7 +142,7 @@
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputWx">手机号</label>
             <div class="col-9 position-relative">
-                <input v-model="tel" type="number" class="form-control" placeholder="9396932154" id="inputWx"/>
+                <input v-model="tel" type="number" class="form-control" placeholder="9396932154" id="inputWx" />
                 <div v-if="!tel && showErrFlag" class="invalid-tooltip d-block">
                     请填写手机号
                 </div>
@@ -150,20 +151,20 @@
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputWx">微信号</label>
             <div class="col-9">
-                <input v-model="wx" type="text" class="form-control" placeholder="请输入微信号" id="inputWx"/>
+                <input v-model="wx" type="text" class="form-control" placeholder="请输入微信号" id="inputWx" />
             </div>
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputTelegram">纸飞机</label>
             <div class="col-9">
                 <input v-model="zfj" type="text" class="form-control" placeholder="请输入telegram"
-                       id="inputTelegram"/>
+                       id="inputTelegram" />
             </div>
         </div>
         <div class="row mb-2">
             <label class="col-3 text-center col-form-label" for="inputTitle">标题</label>
             <div class="col-9">
-                <input v-model="title" type="text" class="form-control" placeholder="请输入标题" id="inputTitle"/>
+                <input v-model="title" type="text" class="form-control" placeholder="请输入标题" id="inputTitle" />
             </div>
         </div>
         <div class="row mb-2">
@@ -206,7 +207,8 @@
         <div class="row mt-5">
             <button @click="postForm" class="btn btn-primary w-50 m-auto rounded-5" :class="{disabled: fetching}">
                 <span v-if="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                确认发布</button>
+                确认发布
+            </button>
         </div>
     </div>
     <div class="toast-container position-fixed start-50 translate-middle-x" style="top: 50px">
@@ -224,383 +226,384 @@
     </div>
 </div>
 <script>
-    Vue.createApp({
-        data() {
-            return {
-                fetching: false,
-                toast: null,
-                tipMsg: '',
-                fetchOK: false,
-                globalData,
-                files: [],
-                imgUrls: [],
-                showErrFlag: false,
-                furnishFilter: [],
-                tagFilter: [],
-                trigger1Data: [],
-                trigger2Data: [],
-                trigger3Data: [],
-                trigger4Data: [],
-                floor: '7',
-                count_floor: '22',
-                tel: '',
-                wx: '',
-                square: '22',
-                community: '',
-                zfj: '',
-                content: '',
-                price: '20000',
-                price_text: 'P/月',
-                priceNegotiable: false,
-                publish_type: '',
-            };
-        },
-        computed: {
-            furnishFilterList() {
-                return this.globalData.filterTypes.find(o => o.model === 'furnishFilter').list;
-            },
-            tagFilterList() {
-                return this.globalData.filterTypes.find(o => o.model === 'tagFilter').list;
-            }
-        },
-        created() {
+  Vue.createApp({
+    data() {
+      return {
+        fetching: false,
+        toast: null,
+        tipMsg: "",
+        fetchOK: false,
+        globalData,
+        files: [],
+        imgUrls: [],
+        showErrFlag: false,
+        furnishFilter: [],
+        tagFilter: [],
+        trigger1Data: [],
+        trigger2Data: [],
+        trigger3Data: [],
+        trigger4Data: [],
+        floor: "7",
+        count_floor: "22",
+        tel: "",
+        wx: "",
+        square: "22",
+        community: "",
+        zfj: "",
+        content: "",
+        price: "20000",
+        price_text: "P/月",
+        priceNegotiable: false,
+        publish_type: ""
+      };
+    },
+    computed: {
+      furnishFilterList() {
+        return this.globalData.filterTypes.find(o => o.model === "furnishFilter").list;
+      },
+      tagFilterList() {
+        return this.globalData.filterTypes.find(o => o.model === "tagFilter").list;
+      }
+    },
+    created() {
 
-        },
-        mounted() {
-            this.toast = new bootstrap.Toast(document.querySelector('#toast'));
-            this.trigger1 = this.initMobileSelect('#trigger1', '出租类型', [
-                {
-                    data: [
-                        {id: '1', value: '整租'},
-                        {id: '2', value: '出租'},
-                        {id: '3', value: '合租'},
-                    ]
-                }
-            ], () => {
-            }, (i, data) => {
-                this.trigger1Data = data;
-            });
-            this.trigger2 = this.initMobileSelect('#trigger2', '户型', [{
-                data: [
-                    {id: '1', value: '1室'},
-                    {id: '2', value: '2室'},
-                    {id: '3', value: '3室'},
-                    {id: '4', value: '4室'},
-                    {id: '5', value: '5室'},
-                    {id: '6', value: '6室'},
-                    {id: '7', value: '7室'},
-                    {id: '8', value: '8室'},
-                    {id: '9', value: '9室'},
-                    {id: '10', value: '10室'},
-                ]
-            }, {
-                data: [
-                    {id: '0', value: '0厅'},
-                    {id: '1', value: '1厅'},
-                    {id: '2', value: '2厅'},
-                    {id: '3', value: '3厅'},
-                    {id: '4', value: '4厅'},
-                    {id: '5', value: '5厅'},
-                    {id: '6', value: '6厅'},
-                    {id: '7', value: '7厅'},
-                    {id: '8', value: '8厅'},
-                    {id: '9', value: '9厅'},
-                    {id: '10', value: '10厅'},
-                ]
-            }, {
-                data: [
-                    {id: '0', value: '0卫'},
-                    {id: '1', value: '1卫'},
-                    {id: '2', value: '2卫'},
-                    {id: '3', value: '3卫'},
-                    {id: '4', value: '4卫'},
-                    {id: '5', value: '5卫'},
-                    {id: '6', value: '6卫'},
-                    {id: '7', value: '7卫'},
-                    {id: '8', value: '8卫'},
-                    {id: '9', value: '9卫'},
-                    {id: '10', value: '10卫'},
-                ]
-            }], () => {
-            }, (i, data) => {
-                this.trigger2Data = data;
-            });
-            this.trigger3 = this.initMobileSelect('#trigger3', '装修/房型/朝向', [
-                {
-                    data: [
-                        {
-                            id: "1",
-                            value: "毛坯",
-                        },
-                        {
-                            id: "2",
-                            value: "普通装修",
-                        },
-                        {
-                            id: "3",
-                            value: "精装修",
-                        },
-                        {
-                            id: "4",
-                            value: "豪华装修",
-                        },
-                    ],
-                },
-                {
-                    data: [{
-                        id: "1",
-                        value: "普通住宅",
-                    },
-                        {
-                            id: "2",
-                            value: "公寓式",
-                        },
-                        {
-                            id: "3",
-                            value: "复式",
-                        },
-                        {
-                            id: "4",
-                            value: "跃层式",
-                        },
-                        {
-                            id: "5",
-                            value: "小户型",
-                        },
-                        {
-                            id: "6",
-                            value: "花园式",
-                        },]
-                },
-                {
-                    data: [{
-                        id: "3",
-                        value: "朝南",
-                    },
-                        {
-                            id: "4",
-                            value: "朝北",
-                        },
-                        {
-                            id: "1",
-                            value: "朝东",
-                        },
-                        {
-                            id: "2",
-                            value: "朝西",
-                        },
-                        {
-                            id: "5",
-                            value: "东南",
-                        },
-                        {
-                            id: "6",
-                            value: "西南",
-                        },
-                        {
-                            id: "9",
-                            value: "南北",
-                        },
-                        {
-                            id: "8",
-                            value: "西北",
-                        },
-                        {
-                            id: "7",
-                            value: "东北",
-                        }]
-                }
-            ], () => {
-            }, (i, data) => {
-                this.trigger3Data = data;
-            });
-            this.trigger4 = this.initMobileSelect('#trigger4', '区域', [
-                {
-                    data: [
-                        {
-                            id: "1",
-                            value: "Metro Manila",
-                            childs: [
-                                {
-                                    id: "1.1",
-                                    value: "Manila",
-                                },
-                                {
-                                    id: "1.2",
-                                    value: "Makati",
-                                },
-                                {
-                                    id: "1.9",
-                                    value: "Taguig(BGC)",
-                                },
-                                {
-                                    id: "1.3",
-                                    value: "Pasay",
-                                },
-                                {
-                                    id: "1.4",
-                                    value: "Paranaque",
-                                },
-                                {
-                                    id: "1.5",
-                                    value: "Pasig",
-                                },
-                                {
-                                    id: "1.6",
-                                    value: "Muntinlupa",
-                                },
-                                {
-                                    id: "1.7",
-                                    value: "Quezon City",
-                                },
-                                {
-                                    id: "1.8",
-                                    value: "Mandaluyong",
-                                },
-
-                                {
-                                    id: "1.10",
-                                    value: "Caloocan",
-                                },
-                                {
-                                    id: "1.11",
-                                    value: "Las Piñas",
-                                },
-                                {
-                                    id: "1.12",
-                                    value: "Malabon",
-                                },
-
-                                {
-                                    id: "1.13",
-                                    value: "Valenzuela",
-                                },
-                                {
-                                    id: "1.14",
-                                    value: "San Juan",
-                                },
-                                {
-                                    id: "1.15",
-                                    value: "其他",
-                                },
-                            ],
-                        },
-                    ],
-                },
-            ], () => {
-            }, (i, data) => {
-                this.trigger4Data = data;
-            });
-        },
-        methods: {
-            goBack() {
-                window.location.href = document.referrer;
-            },
-            goHome() {
-                window.location.href = '/index';
-            },
-            initMobileSelect(el, title, wheelsData, transitionEnd, callback) {
-                return new MobileSelect({
-                    trigger: el,
-                    title: title,
-                    wheels: wheelsData,
-                    position: [0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
-                    transitionEnd: (indexArr, data) => {
-                        transitionEnd(indexArr, data);
-                    },
-                    callback: (indexArr, data) => {
-                        callback(indexArr, data);
-                    }
-                });
-            },
-            removeImg(index) {
-                this.files.splice(index, 1);
-                this.imgUrls.splice(index, 1);
-            },
-            upload(event) {
-                const selectedFiles = event.target.files;
-                for (let i = 0; i < selectedFiles.length; i++) {
-                    const file = selectedFiles[i];
-
-                    if (file) {
-                        // Check file size
-                        if (file.size > 10 * 1024 * 1024) {
-                            alert(`File ${file.name} size exceeds 10MB. Skipping.`);
-                            continue;
-                        }
-
-                        // Check file type
-                        if (!file.type.startsWith("image/")) {
-                            alert(`File ${file.name} is not an image. Skipping.`);
-                            continue;
-                        }
-
-                        // Convert the image to Base64
-                        const reader = new FileReader();
-                        reader.onload = (event) => {
-                            const base64Data = event.target.result;
-                            if (!this.imgUrls.includes(base64Data)) {
-                                this.imgUrls.push(base64Data);
-                            }
-                        };
-                        this.files.push(file);
-                        reader.readAsDataURL(file);
-                    }
-                }
-            },
-            async postForm() {
-                // 校验
-                this.showErrFlag = true;
-                if (this.files.length === 0 || this.trigger1Data.length === 0 || this.trigger2Data.length === 0 || this.trigger3Data.length === 0 || this.trigger4Data.length === 0 ||
-                    !this.community || !this.square || !this.tel) {
-                    return;
-                }
-                const formData = new FormData();
-                for (const fileIndex in this.files) {
-                    formData.append('flie', this.files[fileIndex]);
-                }
-                formData.append('tel', this.tel);
-                formData.append('wx', this.wx);
-                formData.append('zfj', this.zfj);
-                formData.append('title', this.title);
-                formData.append('content', this.content);
-                formData.append('square', this.square);
-                formData.append('price', this.price);
-                formData.append('price_text', this.price_text);
-                formData.append('priceNegotiable', this.priceNegotiable ? '1' : '0');
-                formData.append('publish_type', this.publish_type);
-                formData.append('decoration_type', this.trigger3.getValue()[0].id);
-                formData.append('house_type', this.trigger3.getValue()[1].id);
-                formData.append('orientation', this.trigger3.getValue()[2].id);
-                formData.append('room', this.trigger2.getValue()[0].id);
-                formData.append('office', this.trigger2.getValue()[1].id);
-                formData.append('guard', this.trigger2.getValue()[2].id);
-                formData.append('floor', this.floor);
-                formData.append('count_floor', this.count_floor);
-                formData.append('community', this.community);
-                formData.append('province', this.trigger4.getValue()[0].id);
-                formData.append('city', this.trigger4.getValue()[1].id);
-                formData.append('vice_class', this.trigger1.getValue()[0].id);
-                formData.append('configure', this.furnishFilter.join(','));
-                formData.append('tag', this.tagFilter.join(','));
-                this.fetching = true
-                const res = await fetch('/post', {
-                    method: 'POST',
-                    body: formData,
-                }).then(res => res.json()).finally(()=>{
-                    this.fetching = false
-                });
-                this.tipMsg = res.msg;
-                this.fetchOK = res.ok;
-                this.toast.show();
-                if (res.ok) {
-                    setTimeout(() => {
-                        window.location.href = '/index';
-                    }, 1500);
-                }
-            }
+    },
+    mounted() {
+      this.toast = new bootstrap.Toast(document.querySelector("#toast"));
+      this.trigger1 = this.initMobileSelect("#trigger1", "出租类型", [
+        {
+          data: [
+            { id: "1", value: "整租" },
+            { id: "2", value: "出租" },
+            { id: "3", value: "合租" }
+          ]
         }
-    }).mount('#app');
+      ], () => {
+      }, (i, data) => {
+        this.trigger1Data = data;
+      });
+      this.trigger2 = this.initMobileSelect("#trigger2", "户型", [{
+        data: [
+          { id: "1", value: "1室" },
+          { id: "2", value: "2室" },
+          { id: "3", value: "3室" },
+          { id: "4", value: "4室" },
+          { id: "5", value: "5室" },
+          { id: "6", value: "6室" },
+          { id: "7", value: "7室" },
+          { id: "8", value: "8室" },
+          { id: "9", value: "9室" },
+          { id: "10", value: "10室" }
+        ]
+      }, {
+        data: [
+          { id: "0", value: "0厅" },
+          { id: "1", value: "1厅" },
+          { id: "2", value: "2厅" },
+          { id: "3", value: "3厅" },
+          { id: "4", value: "4厅" },
+          { id: "5", value: "5厅" },
+          { id: "6", value: "6厅" },
+          { id: "7", value: "7厅" },
+          { id: "8", value: "8厅" },
+          { id: "9", value: "9厅" },
+          { id: "10", value: "10厅" }
+        ]
+      }, {
+        data: [
+          { id: "0", value: "0卫" },
+          { id: "1", value: "1卫" },
+          { id: "2", value: "2卫" },
+          { id: "3", value: "3卫" },
+          { id: "4", value: "4卫" },
+          { id: "5", value: "5卫" },
+          { id: "6", value: "6卫" },
+          { id: "7", value: "7卫" },
+          { id: "8", value: "8卫" },
+          { id: "9", value: "9卫" },
+          { id: "10", value: "10卫" }
+        ]
+      }], () => {
+      }, (i, data) => {
+        this.trigger2Data = data;
+      });
+      this.trigger3 = this.initMobileSelect("#trigger3", "装修/房型/朝向", [
+        {
+          data: [
+            {
+              id: "1",
+              value: "毛坯"
+            },
+            {
+              id: "2",
+              value: "普通装修"
+            },
+            {
+              id: "3",
+              value: "精装修"
+            },
+            {
+              id: "4",
+              value: "豪华装修"
+            }
+          ]
+        },
+        {
+          data: [{
+            id: "1",
+            value: "普通住宅"
+          },
+            {
+              id: "2",
+              value: "公寓式"
+            },
+            {
+              id: "3",
+              value: "复式"
+            },
+            {
+              id: "4",
+              value: "跃层式"
+            },
+            {
+              id: "5",
+              value: "小户型"
+            },
+            {
+              id: "6",
+              value: "花园式"
+            }]
+        },
+        {
+          data: [{
+            id: "3",
+            value: "朝南"
+          },
+            {
+              id: "4",
+              value: "朝北"
+            },
+            {
+              id: "1",
+              value: "朝东"
+            },
+            {
+              id: "2",
+              value: "朝西"
+            },
+            {
+              id: "5",
+              value: "东南"
+            },
+            {
+              id: "6",
+              value: "西南"
+            },
+            {
+              id: "9",
+              value: "南北"
+            },
+            {
+              id: "8",
+              value: "西北"
+            },
+            {
+              id: "7",
+              value: "东北"
+            }]
+        }
+      ], () => {
+      }, (i, data) => {
+        this.trigger3Data = data;
+      });
+      this.trigger4 = this.initMobileSelect("#trigger4", "区域", [
+        {
+          data: [
+            {
+              id: "1",
+              value: "Metro Manila",
+              childs: [
+                {
+                  id: "1.1",
+                  value: "Manila"
+                },
+                {
+                  id: "1.2",
+                  value: "Makati"
+                },
+                {
+                  id: "1.9",
+                  value: "Taguig(BGC)"
+                },
+                {
+                  id: "1.3",
+                  value: "Pasay"
+                },
+                {
+                  id: "1.4",
+                  value: "Paranaque"
+                },
+                {
+                  id: "1.5",
+                  value: "Pasig"
+                },
+                {
+                  id: "1.6",
+                  value: "Muntinlupa"
+                },
+                {
+                  id: "1.7",
+                  value: "Quezon City"
+                },
+                {
+                  id: "1.8",
+                  value: "Mandaluyong"
+                },
+
+                {
+                  id: "1.10",
+                  value: "Caloocan"
+                },
+                {
+                  id: "1.11",
+                  value: "Las Piñas"
+                },
+                {
+                  id: "1.12",
+                  value: "Malabon"
+                },
+
+                {
+                  id: "1.13",
+                  value: "Valenzuela"
+                },
+                {
+                  id: "1.14",
+                  value: "San Juan"
+                },
+                {
+                  id: "1.15",
+                  value: "其他"
+                }
+              ]
+            }
+          ]
+        }
+      ], () => {
+      }, (i, data) => {
+        this.trigger4Data = data;
+      });
+    },
+    methods: {
+      goBack() {
+        window.location.href = document.referrer;
+      },
+      goHome() {
+        window.location.href = "/index";
+      },
+      initMobileSelect(el, title, wheelsData, transitionEnd, callback) {
+        return new MobileSelect({
+          trigger: el,
+          title: title,
+          wheels: wheelsData,
+          position: [0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+          transitionEnd: (indexArr, data) => {
+            transitionEnd(indexArr, data);
+          },
+          callback: (indexArr, data) => {
+            callback(indexArr, data);
+          }
+        });
+      },
+      removeImg(index) {
+        this.files.splice(index, 1);
+        this.imgUrls.splice(index, 1);
+        document.getElementById("input-file").value = "";// 解决不能重复上传同一张图片问题
+      },
+      upload(event) {
+        const selectedFiles = event.target.files;
+        for (let i = 0; i < selectedFiles.length; i++) {
+          const file = selectedFiles[i];
+
+          if (file) {
+            // Check file size
+            if (file.size > 10 * 1024 * 1024) {
+              alert(`File ${file.name} size exceeds 10MB. Skipping.`);
+              continue;
+            }
+
+            // Check file type
+            if (!file.type.startsWith("image/")) {
+              alert(`File ${file.name} is not an image. Skipping.`);
+              continue;
+            }
+
+            // Convert the image to Base64
+            const reader = new FileReader();
+            reader.onload = (event) => {
+              const base64Data = event.target.result;
+              if (!this.imgUrls.includes(base64Data)) {
+                this.imgUrls.push(base64Data);
+              }
+            };
+            this.files.push(file);
+            reader.readAsDataURL(file);
+          }
+        }
+      },
+      async postForm() {
+        // 校验
+        this.showErrFlag = true;
+        if (this.files.length === 0 || this.trigger1Data.length === 0 || this.trigger2Data.length === 0 || this.trigger3Data.length === 0 || this.trigger4Data.length === 0 ||
+          !this.community || !this.square || !this.tel) {
+          return;
+        }
+        const formData = new FormData();
+        for (const fileIndex in this.files) {
+          formData.append("flie", this.files[fileIndex]);
+        }
+        formData.append("tel", this.tel);
+        formData.append("wx", this.wx);
+        formData.append("zfj", this.zfj);
+        formData.append("title", this.title);
+        formData.append("content", this.content);
+        formData.append("square", this.square);
+        formData.append("price", this.price);
+        formData.append("price_text", this.price_text);
+        formData.append("priceNegotiable", this.priceNegotiable ? "1" : "0");
+        formData.append("publish_type", this.publish_type);
+        formData.append("decoration_type", this.trigger3.getValue()[0].id);
+        formData.append("house_type", this.trigger3.getValue()[1].id);
+        formData.append("orientation", this.trigger3.getValue()[2].id);
+        formData.append("room", this.trigger2.getValue()[0].id);
+        formData.append("office", this.trigger2.getValue()[1].id);
+        formData.append("guard", this.trigger2.getValue()[2].id);
+        formData.append("floor", this.floor);
+        formData.append("count_floor", this.count_floor);
+        formData.append("community", this.community);
+        formData.append("province", this.trigger4.getValue()[0].id);
+        formData.append("city", this.trigger4.getValue()[1].id);
+        formData.append("vice_class", this.trigger1.getValue()[0].id);
+        formData.append("configure", this.furnishFilter.join(","));
+        formData.append("tag", this.tagFilter.join(","));
+        this.fetching = true;
+        const res = await fetch("/post", {
+          method: "POST",
+          body: formData
+        }).then(res => res.json()).finally(() => {
+          this.fetching = false;
+        });
+        this.tipMsg = res.msg;
+        this.fetchOK = res.ok;
+        this.toast.show();
+        if (res.ok) {
+          setTimeout(() => {
+            window.location.href = "/index";
+          }, 1500);
+        }
+      }
+    }
+  }).mount("#app");
 </script>
 </body>
 </html>

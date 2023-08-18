@@ -1,0 +1,195 @@
+<html>
+<%- include("./share/headErShou.ejs") %>
+<style>
+    .input-file {
+        width: 60px;
+        height: 60px;
+    }
+
+    .input-file-close {
+        width: 15px;
+        height: 15px;
+    }
+</style>
+<body>
+<div class="container" id="app">
+    <div class="position-fixed top-0 start-0 end-0 bg-success z-3" style="height: 48px">
+        <div class="d-flex justify-content-between align-items-center ps-2 pe-2 h-100 cursor-pointer">
+            <i class="icofont-reply text-light fs-5" @click="goBack"></i>
+            <span class="fs-6 text-light ">发布信息</span>
+            <i class="icofont-ui-home text-light fs-5" @click="goHome"></i>
+        </div>
+    </div>
+    <input @change="upload" type="file" accept="image/*" multiple="multiple" id="input-file" name="input-file"
+           class="position-absolute"
+           style="top: -200px" />
+    <div class="p-2 d-flex justify-content-center" style="margin-top: 48px;">
+        <div class="input-file border me-1 position-relative" v-for="(url, index) in imgUrls" :key="url">
+            <img class="w-100 h-100" :src="url" />
+            <img @click="removeImg(index)" class="position-absolute top-0 end-0 input-file-close"
+                 src="/images/close.png" />
+        </div>
+        <label for="input-file"
+               class="fs-1 text-warning input-file d-flex align-items-center justify-content-center border-1 border">+</label>
+
+    </div>
+    <div class="position-relative text-warning text-center fs-7 pb-2">上传图片：可批量上传多张图片
+        <div v-if="imgUrls.length === 0 && showErrFlag" class="invalid-tooltip d-block start-50 translate-middle-x">
+            请上传照片
+        </div>
+    </div>
+    <div class="p-2">
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputPrice">价格</label>
+            <div class="col-9 position-relative">
+                <input v-model="price" type="text" class="form-control" placeholder="请输入商品价格"
+                       id="inputPrice" />
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputQuality">新旧程度</label>
+            <div class="col-9 position-relative">
+                <input v-model="quality" type="text" class="form-control" placeholder="七成新"
+                       id="inputQuality" />
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputWay">交易方式</label>
+            <div class="col-9 position-relative">
+                <input v-model="way" type="text" class="form-control" placeholder="面交"
+                       id="inputWay" />
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label class="col-3 text-center col-form-label" for="inputContent">描述</label>
+            <div class="col-9">
+                <textarea v-model="content" class="form-control" rows="6" placeholder="请输入物品描述"
+                          id="inputContent"></textarea>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <button @click="postForm" class="btn btn-primary w-50 m-auto rounded-5" :class="{disabled: fetching}">
+                <span v-if="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                确认发布
+            </button>
+        </div>
+    </div>
+    <div class="toast-container position-fixed start-50 translate-middle-x" style="top: 50px">
+        <div id="toast" class="toast align-items-center border-0"
+             :class="{'text-bg-success': fetchOK, 'text-bg-danger': !fetchOK}" role="alert" aria-live="assertive"
+             aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body text-center">
+                    {{tipMsg}}
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  Vue.createApp({
+    data() {
+      return {
+        fetching: false,
+        toast: null,
+        tipMsg: "",
+        fetchOK: false,
+        files: [],
+        imgUrls: [],
+        showErrFlag: false,
+        price: "",
+        quality: "",
+        way: "",
+        content: ""
+      };
+    },
+    computed: {},
+    created() {
+    },
+    mounted() {
+      this.toast = new bootstrap.Toast(document.querySelector("#toast"));
+    },
+    methods: {
+      goBack() {
+        window.location.href = document.referrer || "/erShou";
+      },
+      goHome() {
+        window.location.href = "/erShou";
+      },
+      removeImg(index) {
+        this.files.splice(index, 1);
+        this.imgUrls.splice(index, 1);
+        document.getElementById("input-file").value = "";// 解决不能重复上传同一张图片问题
+      },
+      upload(event) {
+        console.log(event);
+        const selectedFiles = event.target.files;
+        for (let i = 0; i < selectedFiles.length; i++) {
+          const file = selectedFiles[i];
+
+          if (file) {
+            // Check file size
+            if (file.size > 10 * 1024 * 1024) {
+              alert(`File ${file.name} size exceeds 10MB. Skipping.`);
+              continue;
+            }
+
+            // Check file type
+            if (!file.type.startsWith("image/")) {
+              alert(`File ${file.name} is not an image. Skipping.`);
+              continue;
+            }
+
+            // Convert the image to Base64
+            const reader = new FileReader();
+            reader.onload = (event) => {
+              const base64Data = event.target.result;
+              if (!this.imgUrls.includes(base64Data)) {
+                this.imgUrls.push(base64Data);
+              }
+            };
+            this.files.push(file);
+            reader.readAsDataURL(file);
+          }
+        }
+        console.log(selectedFiles);
+        console.log(this.imgUrls);
+      },
+      async postForm() {
+        // 校验
+        this.showErrFlag = true;
+        if (this.files.length === 0) {
+          return;
+        }
+        const formData = new FormData();
+        for (const fileIndex in this.files) {
+          formData.append("flie", this.files[fileIndex]);
+        }
+        formData.append("content", this.content);
+        formData.append("quality", this.quality);
+        formData.append("way", this.way);
+        formData.append("price", this.price);
+
+        this.fetching = true;
+        const res = await fetch("/postErShou", {
+          method: "POST",
+          body: formData
+        }).then(res => res.json()).finally(() => {
+          this.fetching = false;
+        });
+        this.tipMsg = res.msg;
+        this.fetchOK = res.ok;
+        this.toast.show();
+        if (res.ok) {
+          setTimeout(() => {
+            window.location.href = "/erShou";
+          }, 1500);
+        }
+      }
+    }
+  }).mount("#app");
+</script>
+</body>
+</html>

@@ -52,7 +52,7 @@
                              aria-live="polite">
                             <% for (const img of item.imgs) { %>
                                 <div data-item="<%= item.imgs %>" class="swiper-slide swiper-slide-img"
-                                     style="background-image: url('/upload/erShou/<%= img %>')">
+                                     style="background-image: url('<%= img %>')">
                                 </div>
                             <% } %>
                         </div>
@@ -133,7 +133,7 @@
                 },
                 on: {
                     click: (swiper, event) => {
-                        this.selectedImgs = event.target.dataset.item.split(',').map(v => `/upload/erShou/${v}`);
+                        this.selectedImgs = event.target.dataset.item.split(',');
                         const slideModal = new bootstrap.Modal('#slide-modal', {});
                         slideModal.toggle();
                         const slideModalEl = document.getElementById('slide-modal');

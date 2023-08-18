@@ -48,11 +48,12 @@ model rentlist {
 }
 
 model er_shou {
-  content  String? @db.LongText
-  id       Int     @id @default(autoincrement())
-  price    String? @db.VarChar(45)
-  quality  String? @db.VarChar(45)
-  way      String? @db.VarChar(45)
-  imgs     Json?
-  username String? @db.VarChar(45)
+  content    String?   @db.LongText
+  id         Int       @id @default(autoincrement())
+  price      String?   @db.VarChar(45)
+  quality    String?   @db.VarChar(45)
+  way        String?   @db.VarChar(45)
+  imgs       Json?
+  username   String?   @db.VarChar(45)
+  created_at DateTime? @default(dbgenerated("'2023-08-18 00:00:00'")) @db.DateTime(0)
 }
