@@ -4,4 +4,5 @@ node_modules
 .idea
 .vscode
 .well-known
-
+# git rm --cached public/upload
+public/upload
