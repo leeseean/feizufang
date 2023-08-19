@@ -6,8 +6,34 @@ const prisma = require("./prisma/prisma");
 const baseUrl = "https://wxfk.one";
 // 静态urls
 const urls = [
-  { url: "/index", changefreq: "daily", priority: 1 },
-  { url: "/erShou", changefreq: "weekly", priority: 0.8 },
+  {
+    url: "/index",
+    changefreq: "daily",
+    priority: 1,
+    news: {
+      publication: {
+        name: "菲租房",
+        language: "zh",
+      },
+      publication_date: new Date().toLocaleDateString(),
+      title: "菲律宾房产_菲律宾房产中介_菲律宾买房_菲租房 - 菲租房",
+      keywords: "菲租房,Makati租房,帕塞租房,菲律宾租房",
+    },
+  },
+  {
+    url: "/erShou",
+    changefreq: "weekly",
+    priority: 0.8,
+    news: {
+      publication: {
+        name: "菲律宾二手交易",
+        language: "zh",
+      },
+      publication_date: new Date().toLocaleDateString(),
+      title: "菲律宾二手交易网",
+      keywords: "二手物品交易,菲律宾二手交易,菲律宾闲鱼",
+    },
+  },
 ];
 
 async function genSitemap() {
@@ -40,6 +66,15 @@ async function genSitemap() {
       url: `${baseUrl}/detail/${item.id}`,
       changefreq: "weekly",
       priority: 0.9,
+      news: {
+        publication: {
+          name: "菲租房",
+          language: "zh",
+        },
+        publication_date: item.dateline,
+        title: item.title,
+        keywords: item.title,
+      },
     });
   }
 

@@ -6,11 +6,29 @@
         <loc>https://wxfk.one/index</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date>2023/8/19</news:publication_date>
+            <news:title>菲律宾房产_菲律宾房产中介_菲律宾买房_菲租房 - 菲租房</news:title>
+            <news:keywords>菲租房,Makati租房,帕塞租房,菲律宾租房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/erShou</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲律宾二手交易</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date>2023/8/19</news:publication_date>
+            <news:title>菲律宾二手交易网</news:title>
+            <news:keywords>二手物品交易,菲律宾二手交易,菲律宾闲鱼</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/index?pageNumber=1</loc>
@@ -426,1350 +444,3784 @@
         <loc>https://wxfk.one/detail/138</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>makati维多利亚 二室 月租 半年租 年租</news:title>
+            <news:keywords>makati维多利亚 二室 月租 半年租 年租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/1613</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>KROMA精美一室一厅，适合家庭或情侣入住</news:title>
+            <news:keywords>KROMA精美一室一厅，适合家庭或情侣入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/2236</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>超豪华装修RCBC隔壁竹子楼，最多可住4人</news:title>
+            <news:keywords>超豪华装修RCBC隔壁竹子楼，最多可住4人</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/2774</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室1厅1卫25平米 租金18000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室1厅1卫25平米 租金18000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/3547</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>自住CITYLAND makati房子大三室出租，可能是楼里最好的</news:title>
+            <news:keywords>自住CITYLAND makati房子大三室出租，可能是楼里最好的</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/3804</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>马卡蒂高档三房 近RCBC/PBCOM 土豪自住配置 带阳台</news:title>
+            <news:keywords>马卡蒂高档三房 近RCBC/PBCOM 土豪自住配置 带阳台</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/3957</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay3室1厅2卫70平米 租金35000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay3室1厅2卫70平米 租金35000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/4170</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租makati 高档大三室公寓出租 看马尼拉湾。</news:title>
+            <news:keywords>出租makati 高档大三室公寓出租 看马尼拉湾。</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/4329</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>grand midori两室一厅 带阳台 40k,接受宠物</news:title>
+            <news:keywords>grand midori两室一厅 带阳台 40k,接受宠物</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/4557</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>ONE PACIFIC PLACE 17楼单间，18K,押一付一，尽快入住</news:title>
+            <news:keywords>ONE PACIFIC PLACE 17楼单间，18K,押一付一，尽快入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/4648</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>pbv bg boracay panglao小两房</news:title>
+            <news:keywords>pbv bg boracay panglao小两房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/4722</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>中国城华人校区‖ 雅景大厦大一室出租</news:title>
+            <news:keywords>中国城华人校区‖ 雅景大厦大一室出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/4990</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>马卡提 cityland 对面，1200平方米独立整栋楼出租</news:title>
+            <news:keywords>马卡提 cityland 对面，1200平方米独立整栋楼出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/4992</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租makati 维多利亚公寓二室一厅，45平租金20000</news:title>
+            <news:keywords>出租makati 维多利亚公寓二室一厅，45平租金20000</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5035</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>精选出租拎包入住air单间26.35平租金30000</news:title>
+            <news:keywords>精选出租拎包入住air单间26.35平租金30000</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5054</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>OKADA赌场边上，海景花园隔壁，Burgundy McKinley Place, 一房 二房 多套出租 ，家电齐全，租金15000比索起
+                华人房东 非中介
+            </news:title>
+            <news:keywords>OKADA赌场边上，海景花园隔壁，Burgundy McKinley Place, 一房 二房 多套出租 ，家电齐全，租金15000比索起
+                华人房东 非中介
+            </news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5115</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Greenbelt附近2房招租</news:title>
+            <news:keywords>Greenbelt附近2房招租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5167</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>车位出租，Burgundy McKinley Place ，海景隔壁</news:title>
+            <news:keywords>车位出租，Burgundy McKinley Place ，海景隔壁</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5354</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>帕赛MOA 商圈SEA 两房拎包入住 带阳台看泳池</news:title>
+            <news:keywords>帕赛MOA 商圈SEA 两房拎包入住 带阳台看泳池</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5498</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>BSA mansion 复式四房</news:title>
+            <news:keywords>BSA mansion 复式四房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5528</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>RCBC和pbcom附近，jazz公寓，楼下商圈</news:title>
+            <news:keywords>RCBC和pbcom附近，jazz公寓，楼下商圈</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5582</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>RISE 两室一厅 55k,押二付三，欢迎约看</news:title>
+            <news:keywords>RISE 两室一厅 55k,押二付三，欢迎约看</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5658</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>中国房东 makati中心公寓一室出租</news:title>
+            <news:keywords>中国房东 makati中心公寓一室出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5699</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租makati市中心 Jazz mall 一室高层20k/月，靠近RCBC 中国房东</news:title>
+            <news:keywords>出租makati市中心 Jazz mall 一室高层20k/月，靠近RCBC 中国房东</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5727</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>bay garden大四房楼中楼 新装修</news:title>
+            <news:keywords>bay garden大四房楼中楼 新装修</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5740</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>多套马卡提维多利亚两房，25k/月起</news:title>
+            <news:keywords>多套马卡提维多利亚两房，25k/月起</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5791</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Coast一房 22K</news:title>
+            <news:keywords>Coast一房 22K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5851</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Makati 招租 长租 Laureano di Trevi Tower 靠近沃尔玛 beacon</news:title>
+            <news:keywords>Makati 招租 长租 Laureano di Trevi Tower 靠近沃尔玛 beacon</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5880</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC2室1厅2卫61平米 租金48000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC2室1厅2卫61平米 租金48000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5915</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>GOLDMINE TOWER(I-SUITS HOTEL)酒店式公寓</news:title>
+            <news:keywords>GOLDMINE TOWER(I-SUITS HOTEL)酒店式公寓</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5917</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Rise 方正两房 租金60K</news:title>
+            <news:keywords>Rise 方正两房 租金60K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5925</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>BGC 君越三房 租金20W</news:title>
+            <news:keywords>BGC 君越三房 租金20W</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5936</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>PBcom精致单间，押二</news:title>
+            <news:keywords>PBcom精致单间，押二</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5946</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫28平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫28平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/5985</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>马卡蒂东方花园复式5房 便宜出租 配大露台</news:title>
+            <news:keywords>马卡蒂东方花园复式5房 便宜出租 配大露台</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6013</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>一手BGC中心地段精装三室带保姆间出租</news:title>
+            <news:keywords>一手BGC中心地段精装三室带保姆间出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6036</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>2房1厅两卫 全新出租 Makati Executive Tower 4 Cityland</news:title>
+            <news:keywords>2房1厅两卫 全新出租 Makati Executive Tower 4 Cityland</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6065</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>房东直租AVIDA TOWERS ASTEN TOWER 3 出租，techzone对面</news:title>
+            <news:keywords>房东直租AVIDA TOWERS ASTEN TOWER 3 出租，techzone对面</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6066</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Vista Shaw Residences 曼达路用</news:title>
+            <news:keywords>Vista Shaw Residences 曼达路用</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6069</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室1厅1卫30平米 租金30000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室1厅1卫30平米 租金30000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6075</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>全新Shore2一房</news:title>
+            <news:keywords>全新Shore2一房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6079</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>房东直租Pasay shore2 租金21000₱/月</news:title>
+            <news:keywords>房东直租Pasay shore2 租金21000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6083</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租趴赛antel seaview室1厅1卫40平米 租金22000₱/月</news:title>
+            <news:keywords>出租趴赛antel seaview室1厅1卫40平米 租金22000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6084</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Serenity Tower 27平 20K,1 1(钻石大厦旁边)</news:title>
+            <news:keywords>Serenity Tower 27平 20K,1 1(钻石大厦旁边)</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6085</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Venice luxury residence 威尼斯水城精装单间40平米 租金27000₱/月</news:title>
+            <news:keywords>出租Venice luxury residence 威尼斯水城精装单间40平米 租金27000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6087</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Pasay1室1厅1卫35平米 租金35000₱/月</news:title>
+            <news:keywords>出租Pasay1室1厅1卫35平米 租金35000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6090</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>名门大一房出租</news:title>
+            <news:keywords>名门大一房出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6091</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Shore3全新出租</news:title>
+            <news:keywords>Shore3全新出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6093</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC2室1厅2卫87平米 租金78000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC2室1厅2卫87平米 租金78000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6096</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫51平米 租金40000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫51平米 租金40000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6097</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室2厅1卫82平米 租金30000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室2厅1卫82平米 租金30000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6098</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>精装coast一房26K，必须押二</news:title>
+            <news:keywords>精装coast一房26K，必须押二</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6103</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC2室1厅2卫92平米 面议</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC2室1厅2卫92平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6105</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>全网最低价 拎包入住</news:title>
+            <news:keywords>全网最低价 拎包入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6106</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>20套一手公寓低价出租 pasay makati</news:title>
+            <news:keywords>20套一手公寓低价出租 pasay makati</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6107</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租维多利亚精装两房48平米 租金30000₱/月</news:title>
+            <news:keywords>出租维多利亚精装两房48平米 租金30000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6108</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMuntinlupa1室0厅1卫26平米 租金12000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMuntinlupa1室0厅1卫26平米 租金12000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6112</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC1室1厅1卫40平米 面议</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC1室1厅1卫40平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6123</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC1室1厅1卫28平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC1室1厅1卫28平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6128</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>71楼两房，租金70k</news:title>
+            <news:keywords>71楼两房，租金70k</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6129</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>求租solstice tower 的车位请联系小飞机@tito2211</news:title>
+            <news:keywords>求租solstice tower 的车位请联系小飞机@tito2211</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6130</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>光辉两房，租金55K</news:title>
+            <news:keywords>光辉两房，租金55K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6134</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>房东直租，高层the rise makati</news:title>
+            <news:keywords>房东直租，高层the rise makati</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6135</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>rise精装转租房来了，32k月租</news:title>
+            <news:keywords>rise精装转租房来了，32k月租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6136</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Jazz 10 套公寓低价出租，全网最低价</news:title>
+            <news:keywords>Jazz 10 套公寓低价出租，全网最低价</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6138</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租makati 香格里拉开发高档公寓两室一厅带车位阳台</news:title>
+            <news:keywords>出租makati 香格里拉开发高档公寓两室一厅带车位阳台</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6143</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>air residences一室一厅转租送免费wifi</news:title>
+            <news:keywords>air residences一室一厅转租送免费wifi</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6144</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>air residences一室一厅转租送免费wifi（57楼）</news:title>
+            <news:keywords>air residences一室一厅转租送免费wifi（57楼）</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6147</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>全新Ｓ一房出租 25K</news:title>
+            <news:keywords>全新Ｓ一房出租 25K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6152</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫51平米 租金40000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫51平米 租金40000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6153</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫55平米 租金20000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫55平米 租金20000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6154</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>The lerato 大两室带阳台保姆间出租！边户型高楼层。</news:title>
+            <news:keywords>The lerato 大两室带阳台保姆间出租！边户型高楼层。</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6155</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>RCBC/ PBCOM 附近2分钟内大单间</news:title>
+            <news:keywords>RCBC/ PBCOM 附近2分钟内大单间</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6158</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室1厅1卫38平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室1厅1卫38平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6159</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>房东直租QC 奎松 City大1室1厅1卫58平米 租金45000₱/月</news:title>
+            <news:keywords>房东直租QC 奎松 City大1室1厅1卫58平米 租金45000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6163</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaManila2室1厅2卫58平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaManila2室1厅2卫58平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6166</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaManila4室4厅1卫280平米 租金250000₱/月</news:title>
+            <news:keywords>出租Metro ManilaManila4室4厅1卫280平米 租金250000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6167</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay2室1厅2卫40平米 租金35000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay2室1厅2卫40平米 租金35000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6173</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>jazz 8套公寓低价出租 怕赛4套</news:title>
+            <news:keywords>jazz 8套公寓低价出租 怕赛4套</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6174</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>全网最低价 租金一万六一月</news:title>
+            <news:keywords>全网最低价 租金一万六一月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6175</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>马卡帝 世纪尖塔7套全新公寓低价出租</news:title>
+            <news:keywords>马卡帝 世纪尖塔7套全新公寓低价出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6177</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>BGC 房子转租 押二付一 12月18号到期</news:title>
+            <news:keywords>BGC 房子转租 押二付一 12月18号到期</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6184</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC1室1厅1卫28平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC1室1厅1卫28平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6187</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室0厅0卫24平米 租金26000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室0厅0卫24平米 租金26000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6189</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>greenbelt chancellor精美单间 30K</news:title>
+            <news:keywords>greenbelt chancellor精美单间 30K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6193</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>怕赛SHELL 6套公寓低价出租</news:title>
+            <news:keywords>怕赛SHELL 6套公寓低价出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6194</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>全网最低价 怕赛 马卡帝房源</news:title>
+            <news:keywords>全网最低价 怕赛 马卡帝房源</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6195</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Jazz 两室一厅 低价出租</news:title>
+            <news:keywords>Jazz 两室一厅 低价出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6203</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaParanaque3室1厅3卫160平米 面议</news:title>
+            <news:keywords>出租Metro ManilaParanaque3室1厅3卫160平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6206</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅0卫26平米 租金20000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅0卫26平米 租金20000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6207</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>SHORE 2 全新一室出租</news:title>
+            <news:keywords>SHORE 2 全新一室出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6208</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>BGC Grand Hyatt金茂君悦四房出租</news:title>
+            <news:keywords>BGC Grand Hyatt金茂君悦四房出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6209</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>UPTOWN PARKSUITES 精装四房</news:title>
+            <news:keywords>UPTOWN PARKSUITES 精装四房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6213</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>PBV大两房 2套 六福对面</news:title>
+            <news:keywords>PBV大两房 2套 六福对面</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6217</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租PIXEL RESIDENCES 单间带阳台</news:title>
+            <news:keywords>转租PIXEL RESIDENCES 单间带阳台</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6218</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>jazz 低价出租 手慢无</news:title>
+            <news:keywords>jazz 低价出租 手慢无</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6220</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>TivoliGarden2室1厅1卫包物业网络租金35000₱/月</news:title>
+            <news:keywords>TivoliGarden2室1厅1卫包物业网络租金35000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6221</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Jazz 6套公寓低价出租 全新家具</news:title>
+            <news:keywords>Jazz 6套公寓低价出租 全新家具</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6222</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>shell D栋一房租金25K</news:title>
+            <news:keywords>shell D栋一房租金25K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6223</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>makati Trump 1br for rent</news:title>
+            <news:keywords>makati Trump 1br for rent</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6227</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC3室2厅2卫186平米 租金100000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC3室2厅2卫186平米 租金100000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6232</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaManila1室1厅1卫33平米 面议</news:title>
+            <news:keywords>出租Metro ManilaManila1室1厅1卫33平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6235</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati2室2厅2卫63平米 租金43000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati2室2厅2卫63平米 租金43000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6244</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅1卫25平米 租金23000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅1卫25平米 租金23000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6245</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫35平米 租金30000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫35平米 租金30000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6246</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫43平米 租金26000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫43平米 租金26000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6255</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Beacon Tower 3 一室一厅带大阳台出租 37K，7月1号可入住</news:title>
+            <news:keywords>Beacon Tower 3 一室一厅带大阳台出租 37K，7月1号可入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6261</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>BGC 顶层 复式520平 出租40万</news:title>
+            <news:keywords>BGC 顶层 复式520平 出租40万</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6263</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>华庭中心royal peak皇庭小两室大一室出租</news:title>
+            <news:keywords>华庭中心royal peak皇庭小两室大一室出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6264</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>华庭中心royal peak皇庭三室出租</news:title>
+            <news:keywords>华庭中心royal peak皇庭三室出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6265</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>华庭中心royal peak 皇庭大两室出租</news:title>
+            <news:keywords>华庭中心royal peak 皇庭大两室出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6266</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC2室1厅2卫48平米 租金14000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC2室1厅2卫48平米 租金14000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6275</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati3室2厅3卫300平米 租金100000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati3室2厅3卫300平米 租金100000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6276</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaManila1室0厅0卫23平米 面议</news:title>
+            <news:keywords>出租Metro ManilaManila1室0厅0卫23平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6278</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>【BGC-The suites三房出租】 高楼层三房，豪华装修。面积212平带2个车位，租金35万</news:title>
+            <news:keywords>【BGC-The suites三房出租】 高楼层三房，豪华装修。面积212平带2个车位，租金35万</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6283</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay3室2厅2卫100平米 租金100000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay3室2厅2卫100平米 租金100000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6284</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫38平米 租金17000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫38平米 租金17000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6285</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫38平米 租金17000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫38平米 租金17000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6286</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>好看的S大一房，租金：30K</news:title>
+            <news:keywords>好看的S大一房，租金：30K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6290</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>BAY GARDEN新楼大四房 楼中楼229平方</news:title>
+            <news:keywords>BAY GARDEN新楼大四房 楼中楼229平方</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6291</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasigOrtigas1室0厅0卫20 40 60 100 平米 租金15000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasigOrtigas1室0厅0卫20 40 60 100 平米 租金15000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6292</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Shore Tower B 一室一厅带大阳台出租 20K，随时可入住</news:title>
+            <news:keywords>Shore Tower B 一室一厅带大阳台出租 20K，随时可入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6296</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>骑士楼单间出租</news:title>
+            <news:keywords>骑士楼单间出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6302</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>好看的全新Shore2出租</news:title>
+            <news:keywords>好看的全新Shore2出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6304</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>全新</news:title>
+            <news:keywords>全新</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6308</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室1厅1卫35平米 租金18000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室1厅1卫35平米 租金18000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6314</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫20平米 租金16000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫20平米 租金16000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6316</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Shore 趴赛 日、周、月租房</news:title>
+            <news:keywords>Shore 趴赛 日、周、月租房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6317</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫32平米 面议</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫32平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6319</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>shell 一房 Ｄ栋高层，租金25K</news:title>
+            <news:keywords>shell 一房 Ｄ栋高层，租金25K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6320</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Makati 办公大楼TECH ZONE隔壁 SAN ANTONIO单间拎包入住</news:title>
+            <news:keywords>Makati 办公大楼TECH ZONE隔壁 SAN ANTONIO单间拎包入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6321</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Makati Jazz D栋高层带阳台员工房 拎包入住</news:title>
+            <news:keywords>Makati Jazz D栋高层带阳台员工房 拎包入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6322</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>赌场附近 冠南·富景花园BAYPORT带阳台一房 拎包入住 安全</news:title>
+            <news:keywords>赌场附近 冠南·富景花园BAYPORT带阳台一房 拎包入住 安全</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6323</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>【BGC出租】Fort victoria , 温馨loft两室一厅 48平，38000p</news:title>
+            <news:keywords>【BGC出租】Fort victoria , 温馨loft两室一厅 48平，38000p</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6326</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Makati Jazz Residence一室一厅招租21k</news:title>
+            <news:keywords>Makati Jazz Residence一室一厅招租21k</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6328</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Makati别墅出租 Dasmarinas Village 达斯马</news:title>
+            <news:keywords>Makati别墅出租 Dasmarinas Village 达斯马</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6329</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>⬆️Makati别墅出租 福布斯内部小独栋 占地400平 4房</news:title>
+            <news:keywords>⬆️Makati别墅出租 福布斯内部小独栋 占地400平 4房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6331</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaParanaque1室1厅1卫50平米 租金18000₱/月</news:title>
+            <news:keywords>出租Metro ManilaParanaque1室1厅1卫50平米 租金18000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6332</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaLas Piñas5室2厅6卫365平米 面议</news:title>
+            <news:keywords>出租Metro ManilaLas Piñas5室2厅6卫365平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6333</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租Metro ManilaPasay1室1厅1卫15平米 租金20000₱/月</news:title>
+            <news:keywords>转租Metro ManilaPasay1室1厅1卫15平米 租金20000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6335</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租Metro ManilaPasay shore1 D 租金20000₱/月</news:title>
+            <news:keywords>转租Metro ManilaPasay shore1 D 租金20000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6336</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>房东直租BGC Bellagio 43平方米方正一房</news:title>
+            <news:keywords>房东直租BGC Bellagio 43平方米方正一房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6338</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMandaluyong1室1厅1卫27.2平米 租金15000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMandaluyong1室1厅1卫27.2平米 租金15000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6339</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC3室2厅2卫130平米 租金60000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC3室2厅2卫130平米 租金60000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6340</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Jazz 30套公寓出租 全网最低价</news:title>
+            <news:keywords>Jazz 30套公寓出租 全网最低价</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6341</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay4室1厅4卫120平米 租金50000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay4室1厅4卫120平米 租金50000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6346</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>帕赛MOA SHORE酒店式一房 带厨房和泳池</news:title>
+            <news:keywords>帕赛MOA SHORE酒店式一房 带厨房和泳池</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6348</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>bay garden大四房 三套</news:title>
+            <news:keywords>bay garden大四房 三套</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6349</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>bayshore美嘉大一房 双阳台 大床房押二付六</news:title>
+            <news:keywords>bayshore美嘉大一房 双阳台 大床房押二付六</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6352</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅1卫24平米 租金22000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅1卫24平米 租金22000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6353</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasigOrtigas1室1厅1卫36平米 租金17000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasigOrtigas1室1厅1卫36平米 租金17000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6357</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Techzone後門星巴克樓上，Avida Asten套房出租</news:title>
+            <news:keywords>Techzone後門星巴克樓上，Avida Asten套房出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6360</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>pasay 周边 公寓，别墅租售</news:title>
+            <news:keywords>pasay 周边 公寓，别墅租售</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6362</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Bay garden 新樓3房1廳4廁156平方米</news:title>
+            <news:keywords>Bay garden 新樓3房1廳4廁156平方米</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6363</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>oak harbor两房看海带车位 无敌海景</news:title>
+            <news:keywords>oak harbor两房看海带车位 无敌海景</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6365</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫37平米 租金30000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫37平米 租金30000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6366</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>AVIDA WEST 1室1厅1卫33平米 租金27000₱/月</news:title>
+            <news:keywords>AVIDA WEST 1室1厅1卫33平米 租金27000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6367</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Avida west 一室一厅出租</news:title>
+            <news:keywords>Avida west 一室一厅出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6369</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>中国房东直租，Makati2室1厅2卫60平米 租金50000₱/月</news:title>
+            <news:keywords>中国房东直租，Makati2室1厅2卫60平米 租金50000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6374</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>marina大型别墅 独栋 精装拎包入住</news:title>
+            <news:keywords>marina大型别墅 独栋 精装拎包入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6376</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>御景花园royal view garden 大5房别墅</news:title>
+            <news:keywords>御景花园royal view garden 大5房别墅</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6382</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租海景Pasay1室1厅1卫58平米 租金35000₱/月</news:title>
+            <news:keywords>出租海景Pasay1室1厅1卫58平米 租金35000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6384</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>已出租</news:title>
+            <news:keywords>已出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6385</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租makati the beacon t3。纯一房一厅</news:title>
+            <news:keywords>转租makati the beacon t3。纯一房一厅</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6386</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaManila1室1厅0卫36平米 租金60000₱/月</news:title>
+            <news:keywords>出租Metro ManilaManila1室1厅0卫36平米 租金60000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6387</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaManila1室1厅1卫36平米 租金7500₱/月</news:title>
+            <news:keywords>出租Metro ManilaManila1室1厅1卫36平米 租金7500₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6388</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租海景1室1厅1卫70平米 租金35000₱/月</news:title>
+            <news:keywords>出租海景1室1厅1卫70平米 租金35000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6390</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati30平米 租金20000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati30平米 租金20000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6393</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫50平米 租金20000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫50平米 租金20000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6397</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅0卫28平米 租金35000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅0卫28平米 租金35000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6399</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅1卫24平米 租金22000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅1卫24平米 租金22000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6401</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC2室1厅3卫222平米 租金380000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC2室1厅3卫222平米 租金380000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6402</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>BGC 3室1厅3卫209平米 租金380000₱/月</news:title>
+            <news:keywords>BGC 3室1厅3卫209平米 租金380000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6403</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫24平米 租金15000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫24平米 租金15000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6406</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>bay garden 斜坡 三房 精装红木 楼中楼</news:title>
+            <news:keywords>bay garden 斜坡 三房 精装红木 楼中楼</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6408</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati3室1厅5卫200平米 面议</news:title>
+            <news:keywords>出租Metro ManilaMakati3室1厅5卫200平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6409</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaParanaque2室1厅1卫70平米 租金350000₱/月</news:title>
+            <news:keywords>出租Metro ManilaParanaque2室1厅1卫70平米 租金350000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6410</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Shore2 全新一房 25K</news:title>
+            <news:keywords>Shore2 全新一房 25K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6411</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租rise两房，租金才60K</news:title>
+            <news:keywords>转租rise两房，租金才60K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6412</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMandaluyong1室1厅1卫27.2平米 租金15000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMandaluyong1室1厅1卫27.2平米 租金15000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6413</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>shell一房无阳台，租金：24K</news:title>
+            <news:keywords>shell一房无阳台，租金：24K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6415</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室1厅1卫28平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室1厅1卫28平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6419</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>豪华装修川普大厦一室一厅转租</news:title>
+            <news:keywords>豪华装修川普大厦一室一厅转租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6421</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>oak harbor大三房楼中楼看城市</news:title>
+            <news:keywords>oak harbor大三房楼中楼看城市</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6422</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>oak residence 大三房 看海精装</news:title>
+            <news:keywords>oak residence 大三房 看海精装</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6423</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>名门大三房 出租</news:title>
+            <news:keywords>名门大三房 出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6428</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租pbcom附近eton tower1室0厅1卫25平米 租金23000₱/月</news:title>
+            <news:keywords>转租pbcom附近eton tower1室0厅1卫25平米 租金23000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6431</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>pasay 周边 公寓，别墅租售</news:title>
+            <news:keywords>pasay 周边 公寓，别墅租售</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6435</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅1卫22平米 租金19000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅1卫22平米 租金19000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6436</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>bayshore2美嘉2期大一房 月底空房</news:title>
+            <news:keywords>bayshore2美嘉2期大一房 月底空房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6446</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>misibis 一房 配置齐全拎包入住</news:title>
+            <news:keywords>misibis 一房 配置齐全拎包入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6447</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>好房出租 GREENBELT CHANCELLOR 26楼，朝南，极度安静</news:title>
+            <news:keywords>好房出租 GREENBELT CHANCELLOR 26楼，朝南，极度安静</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6448</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室1厅1卫27平米 租金23000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室1厅1卫27平米 租金23000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6449</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>好房出租 GREENBELT CHANCELLOR MAKATI 26楼</news:title>
+            <news:keywords>好房出租 GREENBELT CHANCELLOR MAKATI 26楼</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6451</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>捡漏，1室1厅1卫，71楼，出售或出租</news:title>
+            <news:keywords>捡漏，1室1厅1卫，71楼，出售或出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6453</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Arca south 单间出租 14k</news:title>
+            <news:keywords>Arca south 单间出租 14k</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6455</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>BGC 一房出租，Avida 34th Street ,网络付费就能用</news:title>
+            <news:keywords>BGC 一房出租，Avida 34th Street ,网络付费就能用</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6456</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>GREENBELT CHANCELLOR MAKATI 好房出租</news:title>
+            <news:keywords>GREENBELT CHANCELLOR MAKATI 好房出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6457</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC1室1厅1卫28平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC1室1厅1卫28平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6459</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>中国房东直租，beacon复式 46平方拎包入住</news:title>
+            <news:keywords>中国房东直租，beacon复式 46平方拎包入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6460</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>宜居小区Brixton place两房仅需40K</news:title>
+            <news:keywords>宜居小区Brixton place两房仅需40K</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6465</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>26楼 GREENBELT CHANCELLOR makati 马卡提 好房出租</news:title>
+            <news:keywords>26楼 GREENBELT CHANCELLOR makati 马卡提 好房出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6468</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>BGCtwo seranda豪华2房招租低价</news:title>
+            <news:keywords>BGCtwo seranda豪华2房招租低价</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6469</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>低价出租makati 三房</news:title>
+            <news:keywords>低价出租makati 三房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6470</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Oak harbor 海景三房招租</news:title>
+            <news:keywords>Oak harbor 海景三房招租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6474</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租 Tivoli garden 1室1厅，合同还有5个月</news:title>
+            <news:keywords>转租 Tivoli garden 1室1厅，合同还有5个月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6475</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>MakatiTech Zone 隔壁新房San antonio Makati 拎包入住</news:title>
+            <news:keywords>MakatiTech Zone 隔壁新房San antonio Makati 拎包入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6476</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅1卫22平米 租金19000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅1卫22平米 租金19000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6477</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay2室1厅1卫90平米 租金55000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay2室1厅1卫90平米 租金55000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6478</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室1厅1卫40平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室1厅1卫40平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6480</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租BGC-One Uptown Residence精装2房一套 租金71000₱/月带车位</news:title>
+            <news:keywords>转租BGC-One Uptown Residence精装2房一套 租金71000₱/月带车位</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6484</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租BGC One Uptown Residence精装两房一套，带车位 租金71000₱/月</news:title>
+            <news:keywords>转租BGC One Uptown Residence精装两房一套，带车位 租金71000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6485</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租BGC One Uptown Residence精装两房一套 带车位 租金71000₱/月</news:title>
+            <news:keywords>转租BGC One Uptown Residence精装两房一套 带车位 租金71000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6487</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Pixel Residences两房一厅出租COD赌场附近</news:title>
+            <news:keywords>Pixel Residences两房一厅出租COD赌场附近</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6488</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅1卫34平米 面议</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅1卫34平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6489</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>JAZZ B一室一厅转租，月租20000</news:title>
+            <news:keywords>JAZZ B一室一厅转租，月租20000</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6491</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaManila4室2厅3卫300平米 租金75000₱/月</news:title>
+            <news:keywords>出租Metro ManilaManila4室2厅3卫300平米 租金75000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6492</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Coastal Luxury Residencespitx跟前</news:title>
+            <news:keywords>Coastal Luxury Residencespitx跟前</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6493</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Bayshore1 1室1厅1卫50平米 租金40000₱/月</news:title>
+            <news:keywords>出租Bayshore1 1室1厅1卫50平米 租金40000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6494</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC3室2厅3卫110平米 租金95000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC3室2厅3卫110平米 租金95000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6495</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>好房出租 GREENBELT CHANCELLOR MAKATI</news:title>
+            <news:keywords>好房出租 GREENBELT CHANCELLOR MAKATI</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6496</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Pasay Sea 2房1厅1卫，转租，送20天租期，租金50000₱/月</news:title>
+            <news:keywords>Pasay Sea 2房1厅1卫，转租，送20天租期，租金50000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6497</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Avida west 一室一厅，techzone 斜对面，中国房东</news:title>
+            <news:keywords>Avida west 一室一厅，techzone 斜对面，中国房东</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6498</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Avida west ,Techzone 斜对面</news:title>
+            <news:keywords>Avida west ,Techzone 斜对面</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6500</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租BGC2室2厅2卫85平米 租金55000₱/月</news:title>
+            <news:keywords>出租BGC2室2厅2卫85平米 租金55000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6502</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>MAKATI GREENBELT CHANCELLOR 好房出租 26楼，朝南，极度安静</news:title>
+            <news:keywords>MAKATI GREENBELT CHANCELLOR 好房出租 26楼，朝南，极度安静</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6504</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租</news:title>
+            <news:keywords>出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6505</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室1厅1卫26平米 租金23000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室1厅1卫26平米 租金23000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6506</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>8 Forbes福布斯精装两房高尔夫球风景房</news:title>
+            <news:keywords>8 Forbes福布斯精装两房高尔夫球风景房</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6507</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Avida Asten 在便利与奢华相遇的地方，您可以称之为家的地方,星巴克步行距离</news:title>
+            <news:keywords>Avida Asten 在便利与奢华相遇的地方，您可以称之为家的地方,星巴克步行距离</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6509</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay5室2厅6卫320平米 租金200000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay5室2厅6卫320平米 租金200000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6510</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasigOrtigas1室0厅1卫23平米 租金18000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasigOrtigas1室0厅1卫23平米 租金18000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6512</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>低价出租复式4房Makati</news:title>
+            <news:keywords>低价出租复式4房Makati</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6514</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>shore2 tower 1 边户1房东直租</news:title>
+            <news:keywords>shore2 tower 1 边户1房东直租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6518</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>中国房东直租复式1室1厅1卫46平米 租金32000₱/月</news:title>
+            <news:keywords>中国房东直租复式1室1厅1卫46平米 租金32000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6519</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转 shore 房子</news:title>
+            <news:keywords>转 shore 房子</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6520</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasigOrtigas3室1厅2卫83平米 面议</news:title>
+            <news:keywords>出租Metro ManilaPasigOrtigas3室1厅2卫83平米 面议</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6522</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Makati beacon 复式出租</news:title>
+            <news:keywords>Makati beacon 复式出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6524</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>六福大三房 多套出租</news:title>
+            <news:keywords>六福大三房 多套出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6525</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>misibis palm beach west一房出租 六福斜对面</news:title>
+            <news:keywords>misibis palm beach west一房出租 六福斜对面</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6528</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>转租Tivoli garden租金25000₱/月</news:title>
+            <news:keywords>转租Tivoli garden租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6529</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>The rise Makati</news:title>
+            <news:keywords>The rise Makati</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6530</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>4W peso包物业费 中国房东，不扣押金，安全放心</news:title>
+            <news:keywords>4W peso包物业费 中国房东，不扣押金，安全放心</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6532</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC1室0厅0卫40平米 租金28000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC1室0厅0卫40平米 租金28000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6534</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅1卫30平米 租金18000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅1卫30平米 租金18000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6536</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租趴赛okada附近看海大1室1厅1卫73平米带保姆房，带车位 租金65000₱/月</news:title>
+            <news:keywords>出租趴赛okada附近看海大1室1厅1卫73平米带保姆房，带车位 租金65000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6539</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Fame大厦1房一厅带阳台</news:title>
+            <news:keywords>Fame大厦1房一厅带阳台</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6540</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>精装一居室baysbore2 tower C出租</news:title>
+            <news:keywords>精装一居室baysbore2 tower C出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6541</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>特价：BAYSHORE 1 45平米大一房拎包入住 看泳池</news:title>
+            <news:keywords>特价：BAYSHORE 1 45平米大一房拎包入住 看泳池</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6542</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>特价：BAYSHROE 1 朝南看海一房 拎包入住</news:title>
+            <news:keywords>特价：BAYSHROE 1 朝南看海一房 拎包入住</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6543</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>好房出租 GREENBELT CHANCELLOR 26楼 朝南</news:title>
+            <news:keywords>好房出租 GREENBELT CHANCELLOR 26楼 朝南</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6544</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Air 一房一厅 2300一个月</news:title>
+            <news:keywords>Air 一房一厅 2300一个月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6546</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Bayshore2 转租B栋 7楼</news:title>
+            <news:keywords>Bayshore2 转租B栋 7楼</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6547</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>马卡提 GREENBELT CHANCELLOR 好房出租</news:title>
+            <news:keywords>马卡提 GREENBELT CHANCELLOR 好房出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6550</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaTaguigBGC2室1厅1卫52平米 租金30000₱/月</news:title>
+            <news:keywords>出租Metro ManilaTaguigBGC2室1厅1卫52平米 租金30000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6553</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>4.5W peso包PLDT宽带网络，包物业费 中国房东，不扣押金，安全放心</news:title>
+            <news:keywords>4.5W peso包PLDT宽带网络，包物业费 中国房东，不扣押金，安全放心</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6556</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay1室1厅1卫24平米 租金28000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay1室1厅1卫24平米 租金28000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6557</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>GREENBELT CHANCELLOR 好房出租 26楼，朝南，极度安静</news:title>
+            <news:keywords>GREENBELT CHANCELLOR 好房出租 26楼，朝南，极度安静</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6558</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室0厅0卫34平米 租金30000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室0厅0卫34平米 租金30000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6559</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaPasay3室2厅3卫127平米 租金140000₱/月</news:title>
+            <news:keywords>出租Metro ManilaPasay3室2厅3卫127平米 租金140000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6560</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>精装</news:title>
+            <news:keywords>精装</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6562</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaManila2室1厅3卫80平米 租金35000₱/月</news:title>
+            <news:keywords>出租Metro ManilaManila2室1厅3卫80平米 租金35000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6563</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati2室1厅1卫40平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati2室1厅1卫40平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6564</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Shore Residence 位置是我们最好的住宿,洁净室，重新开始。</news:title>
+            <news:keywords>Shore Residence 位置是我们最好的住宿,洁净室，重新开始。</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6565</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>优雅舒适！精装修打算自住公寓出租</news:title>
+            <news:keywords>优雅舒适！精装修打算自住公寓出租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6566</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>好房出租 Greenbelt Chancellor Makati</news:title>
+            <news:keywords>好房出租 Greenbelt Chancellor Makati</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6567</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>Makati全新联排别墅招租</news:title>
+            <news:keywords>Makati全新联排别墅招租</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6568</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati1室1厅1卫32平米 租金23000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati1室1厅1卫32平米 租金23000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6569</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati2室1厅2卫63平米 租金40000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati2室1厅2卫63平米 租金40000₱/月</news:keywords>
+        </news:news>
     </url>
     <url>
         <loc>https://wxfk.one/detail/6570</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <news:news>
+            <news:publication>
+                <news:name>菲租房</news:name>
+                <news:language>zh</news:language>
+            </news:publication>
+            <news:publication_date/>
+            <news:title>出租Metro ManilaMakati2室1厅1卫40平米 租金25000₱/月</news:title>
+            <news:keywords>出租Metro ManilaMakati2室1厅1卫40平米 租金25000₱/月</news:keywords>
+        </news:news>
     </url>
 </urlset>
