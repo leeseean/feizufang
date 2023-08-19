@@ -27,7 +27,8 @@
   "devDependencies": {
     "nodemon": "^3.0.1",
     "prettier": "^3.0.0",
-    "prisma": "^5.0.0"
+    "prisma": "^5.0.0",
+    "sitemap": "^7.1.1"
   },
   "prisma": {
     "schema": "prisma/schema.prisma"
