@@ -39,7 +39,7 @@ router.get("/", async (req, res) => {
 });
 router.get("/imgs", async (req, res) => {
   const resp = await prisma.er_shou.findMany();
-  const list = resp.map((item) => item.imgs);
+  const list = resp.map((item) => item.oss_imgs);
   return res.json(list);
 });
 module.exports = router;

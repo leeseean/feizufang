@@ -62,6 +62,7 @@ async function query(pageIndex) {
               data: {
                 username: data.username,
                 id: data.id,
+                oss_imgs: data.imglist,
                 imgs: data.imglist
                   ? data.imglist.map(
                       (item) => "/upload/erShou/" + item.split("/").pop(),
@@ -71,6 +72,9 @@ async function query(pageIndex) {
                 price: findItem(data.diycon, "价格") || "面议",
                 quality: findItem(data.diycon, "新旧程度") || "9成",
                 way: findItem(data.diycon, "交易方式") || "面交",
+                created_at: DateTime.fromMillis(data.addtime * 1000).toFormat(
+                  "yyyy-MM-dd'T'HH:mm:ss.SSSZZ",
+                ),
               },
             })
             .then((o) => {
@@ -101,3 +105,40 @@ function findItem(o = [], v = "") {
   if (!o) o = [];
   return o.find((item) => item.name === v)?.value;
 }
+//下载图片在浏览器运行这段代码
+/*function downloadBlobFromURL(url, filename) {
+  // 创建一个 XMLHttpRequest 对象
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', url, true);
+  xhr.responseType = 'blob';
+
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      // 将响应数据转换为 Blob
+      const blob = xhr.response;
+
+      // 创建一个下载链接
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.download = filename || url.split('/').slice(-1); // 设置文件名
+      link.click();
+
+      // 释放链接对象
+      window.URL.revokeObjectURL(link.href);
+    }
+  };
+
+  xhr.send();
+}
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function ddo() {
+    for (const item of aaaa) {
+        for (const img of item) {
+            await sleep(500)
+            downloadBlobFromURL(img)
+        }
+    }
+}
+ddo()*/
