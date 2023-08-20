@@ -1,6 +1,7 @@
 <html>
 <%- include("./share/headRent.ejs") %>
 <body>
+<h1 style="position: absolute;left: -1000px;">菲律宾租房，马尼拉租房，马卡蒂租房</h1>
 <div class="container border" id="app">
     <%- include("./share/nav.ejs") %>
     <div class="search-panel row pt-2 pb-2 border-bottom">
@@ -153,10 +154,10 @@
     </nav>
     <% if (user) { %>
         <img @click="goPost" class="position-fixed img-fluid" style="width: 50px;bottom: 40px; right: 20px;"
-             src="/images/add.png"/>
+             alt="发布房源" src="/images/add.png"/>
     <% } else { %>
         <img @click="goLogin" class="position-fixed img-fluid" style="width: 50px;bottom: 40px; right: 20px;"
-             src="/images/add.png"/>
+             alt="发布房源" src="/images/add.png"/>
         <!--<div @click="goLogin" class="position-fixed bg-primary text-light fs-6 rounded-circle text-center"
              style="width: 50px; height: 50px;line-height: 50px;bottom: 60px; right: 20px;"
         >登录

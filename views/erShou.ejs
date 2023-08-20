@@ -15,6 +15,7 @@
     }
 </style>
 <body>
+<h1 style="position: absolute;left: -1000px;">菲律宾同城交易，二手物品交易，闲置物品出售</h1>
 <div class="container border" id="app">
     <%- include("./share/nav.ejs") %>
     <div class="search-panel row pt-2 pb-2 border-bottom">
@@ -97,10 +98,10 @@
     </nav>
     <% if (user) { %>
         <img @click="goPost" class="position-fixed z-3 img-fluid" style="width: 50px;bottom: 40px; right: 20px;"
-             src="/images/add.png"/>
+             alt="发布闲置物品" src="/images/add.png"/>
     <% } else { %>
         <img @click="goLogin" class="position-fixed z-3 img-fluid" style="width: 50px;bottom: 40px; right: 20px;"
-             src="/images/add.png"/>
+             alt="发布闲置物品" src="/images/add.png"/>
     <% } %>
     <div id="slide-modal" class="modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
