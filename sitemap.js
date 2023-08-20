@@ -16,7 +16,7 @@ const urls = [
         language: "zh",
       },
       publication_date: new Date().toLocaleDateString(),
-      title: "菲律宾房产_菲律宾房产中介_菲律宾买房_菲租房 - 菲租房",
+      title: "菲律宾房产，菲律宾bgc租房，菲律宾买房，菲龙网租房 - 菲租房",
       keywords: "菲租房,Makati租房,帕塞租房,菲律宾租房",
     },
   },
