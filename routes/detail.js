@@ -18,6 +18,8 @@ router.get("/:id", async (req, res) => {
     },
   });
   res.render("detail", {
+    locationOrigin: req.protocol + "://" + req.get("host"),
+    currentHref: req.protocol + "://" + req.get("host") + req.originalUrl,
     detail,
     orientationFilterList,
     roomFilterList,
