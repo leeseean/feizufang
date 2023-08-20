@@ -9,7 +9,7 @@ const urls = [
   {
     url: "/index",
     changefreq: "daily",
-    priority: 1,
+    // priority: 1,
     news: {
       publication: {
         name: "菲租房",
@@ -23,7 +23,7 @@ const urls = [
   {
     url: "/erShou",
     changefreq: "weekly",
-    priority: 0.8,
+    // priority: 0.8,
     news: {
       publication: {
         name: "菲律宾二手交易",
@@ -49,7 +49,7 @@ async function genSitemap() {
     urls.push({
       url: `${baseUrl}/index?pageNumber=${i + 1}`,
       changefreq: "weekly",
-      priority: 0.6,
+      // priority: 0.6,
     });
   }
   // 分页http://wxfk.one/erShou?pageNumber=2
@@ -57,7 +57,7 @@ async function genSitemap() {
     urls.push({
       url: `${baseUrl}/erShou?pageNumber=${i + 1}`,
       changefreq: "weekly",
-      priority: 0.6,
+      // priority: 0.6,
     });
   }
   // 详情页http://wxfk.one/detail/6153
@@ -65,7 +65,7 @@ async function genSitemap() {
     urls.push({
       url: `${baseUrl}/detail/${item.id}`,
       changefreq: "weekly",
-      priority: 0.9,
+      // priority: 0.9,
       news: {
         publication: {
           name: "菲租房",
